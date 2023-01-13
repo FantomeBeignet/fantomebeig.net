@@ -1,8 +1,9 @@
 <nav class="navbar">
-  <span class="logotype">
-    <span class="nav-item__highlight">F</span>antome<span class="nav-item__highlight">B</span
+  <h3 class="logotype">
+    <span class="logotype__highlight">F</span>antome<span
+      class="logotype__highlight">B</span
     >eignet<span class="animate-blink">_</span>
-  </span>
+  </h3>
   <ul class="nav-inner">
     <li class="nav-item">// home</li>
     <li class="nav-item">// about</li>
@@ -29,17 +30,22 @@
     @apply px-6;
   }
 
+  .logotype__highlight {
+    @apply text-accent;
+  }
+
   .nav-inner {
     @apply flex flex-row items-center justify-center;
     @apply gap-16;
   }
 
+  .nav-inner:hover > .nav-item:not(:hover) {
+    @apply text-primary-light;
+  }
+
   .nav-item {
     font-family: "Fira Code", monospace;
     @apply text-xl text-secondary;
-  }
-
-  .nav-item__highlight {
-    @apply text-accent;
+    transition: color 0.2s ease-in-out;
   }
 </style>
