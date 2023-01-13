@@ -1,0 +1,45 @@
+<nav class="navbar">
+  <span class="logotype">
+    <span class="nav-item__highlight">F</span>antome<span class="nav-item__highlight">B</span
+    >eignet<span class="animate-blink">_</span>
+  </span>
+  <ul class="nav-inner">
+    <li class="nav-item">// home</li>
+    <li class="nav-item">// about</li>
+    <li class="nav-item">// projects</li>
+    <li class="nav-item">// contact</li>
+  </ul>
+</nav>
+
+<style>
+  .navbar {
+    @apply flex items-center justify-center w-full;
+    @apply py-6;
+  }
+
+  .navbar::after {
+    content: "";
+    flex: 1;
+  }
+
+  .logotype {
+    flex: 1;
+    font-family: "Fira Code", monospace;
+    @apply text-2xl text-secondary;
+    @apply px-6;
+  }
+
+  .nav-inner {
+    @apply flex flex-row items-center justify-center;
+    @apply gap-16;
+  }
+
+  .nav-item {
+    font-family: "Fira Code", monospace;
+    @apply text-xl text-secondary;
+  }
+
+  .nav-item__highlight {
+    @apply text-accent;
+  }
+</style>
