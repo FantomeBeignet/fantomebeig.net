@@ -12,40 +12,51 @@
   </ul>
 </nav>
 
-<style>
+<style lang="scss">
   .navbar {
-    @apply flex items-center justify-center w-full;
-    @apply py-6;
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem 0;
 
-  .navbar::after {
+    &:after {
     content: "";
     flex: 1;
+    }
   }
 
   .logotype {
     flex: 1;
     font-family: "Fira Code", monospace;
-    @apply text-2xl text-secondary;
-    @apply px-6;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 1.5rem;
+    color: var(--color-text);
   }
 
   .logotype__highlight {
-    @apply text-accent;
+    color: var(--color-accent);
   }
 
   .nav-inner {
-    @apply flex flex-row items-center justify-center;
-    @apply gap-16;
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 
-  .nav-inner:hover > .nav-item:not(:hover) {
-    @apply text-primary-light;
+    &:hover > .nav-item:not(:hover) {
+      color: var(--color-background-light);
+    }
   }
 
   .nav-item {
     font-family: "Fira Code", monospace;
-    @apply text-xl text-secondary;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--color-text);
     transition: color 0.2s ease-in-out;
   }
 </style>
