@@ -16,6 +16,10 @@
     "@fontsource/fira-code": "^4.5.12",
     "@fontsource/fira-sans": "^4.5.10",
     "astro": "^1.8.0",
+    "autoprefixer": "^10.4.13",
     "svelte": "^3.55.0"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }
