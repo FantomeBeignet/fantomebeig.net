@@ -2,7 +2,7 @@
   <h3 class="logotype">
     <span class="logotype__highlight">F</span>antome<span
       class="logotype__highlight">B</span
-    >eignet<span class="animate-blink">_</span>
+    >eignet<span class="blink">_</span>
   </h3>
   <ul class="nav-inner">
     <li class="nav-item">// home</li>
@@ -34,6 +34,10 @@
     line-height: 2rem;
     padding: 0 1.5rem;
     color: var(--color-text);
+
+    .blink {
+      animation: blink 1.2s steps(1, start) infinite;
+    }
   }
 
   .logotype__highlight {
@@ -58,5 +62,14 @@
     line-height: 1.75rem;
     color: var(--color-text);
     transition: color 0.2s ease-in-out;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
   }
 </style>
