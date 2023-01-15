@@ -1,4 +1,8 @@
 <div class="hero">
+  <div class="blob" aria-hidden="true"></div>
+  <div class="blob" aria-hidden="true"></div>
+  <div class="blob" aria-hidden="true"></div>
+  <div class="blob" aria-hidden="true"></div>
   <div class="hero-text">
     <h1 class="hero-intro">
       Hi, I'm <span class="hero-highlight"
@@ -16,6 +20,7 @@
 
 <style lang="scss">
   .hero {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +32,57 @@
     font-weight: 700;
     color: var(--color-text);
     padding: 6rem 2.5rem;
+
+    .blob {
+      position: absolute;
+      z-index: -1;
+      aspect-ratio: 1;
+
+      &:nth-of-type(1) {
+        background-color: var(--color-accent-dark);
+        opacity: 0.05;
+        top: 20%;
+        left: -20%;
+        width: 70vmin;
+        height: 70vmin;
+        transform-origin: 60% 30%;
+        animation: spin 30s linear infinite,
+          morph 15s ease-in-out infinite alternate;
+      }
+      &:nth-of-type(2) {
+        background-color: var(--color-background-light);
+        opacity: 0.1;
+        top: 5%;
+        right: 5%;
+        width: 40vmin;
+        height: 40vmin;
+        transform-origin: 20% 55%;
+        animation: spin 30s linear infinite,
+          morph-bis 15s ease-in-out infinite alternate;
+      }
+      &:nth-of-type(3) {
+        background-color: var(--color-accent-light);
+        opacity: 0.05;
+        bottom: 5%;
+        right: 5%;
+        width: 20vmin;
+        height: 20vmin;
+        transform-origin: 10% 20%;
+        animation: spin 30s linear infinite,
+          morph-ter 15s ease-in-out infinite alternate;
+      }
+      &:nth-of-type(4) {
+        background-color: var(--color-background-light);
+        opacity: 0.05;
+        bottom: 20%;
+        left: 50%;
+        width: 30vmin;
+        height: 30vmin;
+        transform-origin: -25% -15%;
+        animation: spin 30s linear infinite,
+          morph 15s ease-in-out infinite alternate;
+      }
+    }
 
     .hero-text {
       display: flex;
@@ -45,7 +101,7 @@
       animation: type 0.75s steps(4, end) infinite alternate;
       color: var(--color-text);
 
-      &:before {
+      &::before {
         content: " ";
         display: inline-block;
       }
@@ -120,6 +176,39 @@
     }
     to {
       width: 100%;
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes morph {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    100% {
+      border-radius: 41% 51% 44% 48% / 38% 67% 23% 60%;
+    }
+  }
+
+  @keyframes morph-bis {
+    0% {
+      border-radius: 39% 61% 70% 30% / 36% 73% 27% 64%;
+    }
+    100% {
+      border-radius: 62% 38% 62% 38% / 36% 21% 79% 64%;
+    }
+  }
+
+  @keyframes morph-ter {
+    0% {
+      border-radius: 62% 38% 62% 38% / 31% 45% 55% 69%;
+    }
+    100% {
+      border-radius: 77% 23% 75% 25% / 64% 21% 79% 36%;
     }
   }
 
