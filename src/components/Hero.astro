@@ -11,15 +11,16 @@
       >.</span
     >
   </div>
+  <button class="contact-button">// contact me</button>
 </div>
 
 <style lang="scss">
   .hero {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 2.5rem;
     font-family: "Fira Sans", sans-serif;
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -73,6 +74,44 @@
         }
       }
     }
+
+    .contact-button {
+      font-family: "Fira Code", monospace;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+      padding: 0.75rem 1rem;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+        border-top: 2px solid var(--color-accent);
+        border-left: 2px solid var(--color-accent);
+      }
+
+      &::after {
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid var(--color-accent);
+        border-right: 2px solid var(--color-accent);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
   @keyframes type {
@@ -90,6 +129,7 @@
       line-height: 1;
       justify-content: start;
       padding: 10rem 5rem;
+      gap: 5rem;
 
       .hero-text {
         gap: 1.5rem;
@@ -105,6 +145,18 @@
             width: 10rem;
             height: 1.25rem;
           }
+        }
+      }
+
+      .contact-button {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 1.25rem 1.75rem;
+
+        &::before,
+        &::after {
+          width: 2rem;
+          height: 2rem;
         }
       }
     }
