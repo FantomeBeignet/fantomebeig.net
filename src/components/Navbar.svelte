@@ -12,7 +12,7 @@
     >eignet<span class="blink">_</span>
   </h3>
   <ul class="nav-inner" aria-expanded={isMenuOpen ? "true" : "false"}>
-    <li class="nav-item">// home</li>
+    <li class="nav-item"><a href="/">// home</a></li>
     <li class="nav-item">// about</li>
     <li class="nav-item">// projects</li>
     <li class="nav-item">// contact</li>
