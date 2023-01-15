@@ -100,6 +100,9 @@
   }
 
   @media screen and (min-width: 1024px) {
+    .navbar {
+      padding: 2rem;
+    }
     .navbar::after {
       content: "";
       flex: 1;
@@ -119,6 +122,11 @@
       align-items: center;
       justify-content: center;
       gap: 4rem;
+    }
+
+    .nav-item {
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
 
     .menu-button {
