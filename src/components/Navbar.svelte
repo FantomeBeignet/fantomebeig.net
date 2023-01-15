@@ -99,7 +99,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .navbar::after {
       content: "";
       flex: 1;
