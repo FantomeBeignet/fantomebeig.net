@@ -1,10 +1,12 @@
 <section class="about">
-  <div class="about__content">
+  <div class="about__me">
     <h2 class="about__title" id="about">ABOUT</h2>
     <div class="about__text">
       <p>
         Hey there ! My name is Tom, and I'm a computer engineering student at
-        TELECOM Nancy in France.
+        TELECOM Nancy in France. I'm mainly interested in web developement,
+        systems programming and writing compilers, but I like to do a bit of
+        everything !
       </p>
     </div>
   </div>
@@ -24,7 +26,6 @@
     padding: var(--skew-padding) 0;
     margin: 4rem 0 var(--skew-padding) 0;
 
-
     &::before {
       content: "";
       position: absolute;
@@ -34,25 +35,25 @@
       transform: skewY(var(--skew-angle));
     }
 
-    &__content {
-      padding: 1rem;
+    &__me {
+      padding: 2.5rem;
       color: var(--color-background-dark);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     &__title {
-      font-family: "Fira Sans", sans-serif;
+      width: 100%;
       font-size: 1.875rem;
       line-height: 2.25rem;
+      letter-spacing: 0.025em;
       font-weight: 600;
     }
 
     &__text {
-      text-align: center;
       font-size: 0.875rem;
       line-height: 1.25rem;
     }
@@ -60,8 +61,25 @@
 
   @media screen and (min-width: 1024px) {
     .about {
-      --magic-number: 0.03496;
-      --skew-angle: -4deg;
+      --magic-number: 0.04374;
+      --skew-angle: -5deg;
+
+      &__me {
+        gap: 4rem;
+        padding: 3rem;
+        max-width: 50rem;
+      }
+
+      &__title {
+        font-size: 3.75rem;
+        line-height: 1;
+        letter-spacing: 0.05em;
+      }
+
+      &__text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
     }
   }
 </style>
