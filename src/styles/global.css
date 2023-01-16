@@ -12,6 +12,10 @@
   --color-accent-dark: #9a72b5;
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
 
 /* Tailwind's preflight */
 /*
