@@ -3,6 +3,9 @@
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
   }
+  function closeMenu() {
+    isMenuOpen = false;
+  }
 </script>
 
 <nav class={`navbar ${isMenuOpen ? "sidebar--open" : "sidebar--closed"}`}>
@@ -12,8 +15,8 @@
     >eignet<span class="navbar__logo--blink">_</span>
   </h3>
   <ul class="navbar__links" aria-expanded={isMenuOpen ? "true" : "false"}>
-    <li class="navbar__link"><a href="/">// home</a></li>
-    <li class="navbar__link">// about</li>
+    <li class="navbar__link"><a href="/" on:click={closeMenu}>// home</a></li>
+    <li class="navbar__link"><a href="/#about" on:click={closeMenu}>// about</a></li>
     <li class="navbar__link">// projects</li>
     <li class="navbar__link">// contact</li>
   </ul>
