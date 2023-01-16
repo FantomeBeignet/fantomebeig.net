@@ -1,21 +1,21 @@
 <div class="hero">
-  <div class="blob" aria-hidden="true"></div>
-  <div class="blob" aria-hidden="true"></div>
-  <div class="blob" aria-hidden="true"></div>
-  <div class="blob" aria-hidden="true"></div>
-  <div class="hero-text">
-    <h1 class="hero-intro">
-      Hi, I'm <span class="hero-highlight"
-        >Tom<span class="hero-type">_.</span>
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="hero__text">
+    <h1 class="hero__intro">
+      Hi, I'm <span class="hero__text--highlight"
+        >Tom<span class="hero__text--type">_.</span>
       </span>
     </h1>
-    <span class="hero-subtext"
+    <span class="hero__subtext"
       >I'm a student, developer, but most importantly a <span
-        class="hero-underlined">tinkerer</span
+        class="hero__subtext--underlined">tinkerer</span
       >.</span
     >
   </div>
-  <button class="contact-button">// contact me</button>
+  <button class="hero__button">// contact me</button>
 </div>
 
 <style lang="scss">
@@ -33,7 +33,7 @@
     color: var(--color-text);
     padding: 6rem 2.5rem;
 
-    .blob {
+    &__blob {
       position: absolute;
       z-index: -1;
       aspect-ratio: 1;
@@ -84,37 +84,38 @@
       }
     }
 
-    .hero-text {
+    &__text {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-    }
-    .hero-highlight {
-      display: inline-flex;
-      font-family: "Fira Code", monospace;
-      color: var(--color-accent);
-    }
 
-    .hero-type {
-      overflow: hidden;
-      white-space: nowrap;
-      animation: type 0.75s steps(4, end) infinite alternate;
-      color: var(--color-text);
+      &--highlight {
+        display: inline-flex;
+        font-family: "Fira Code", monospace;
+        color: var(--color-accent);
+      }
 
-      &::before {
-        content: " ";
-        display: inline-block;
+      &--type {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: type 0.75s steps(4, end) infinite alternate;
+        color: var(--color-text);
+
+        &::before {
+          content: " ";
+          display: inline-block;
+        }
       }
     }
 
-    .hero-subtext {
+    &__subtext {
       font-size: 1.875rem;
       line-height: 2.25rem;
       font-weight: 400;
       color: var(--color-text);
       margin: 1rem 0;
 
-      .hero-underlined {
+      &--underlined {
         display: inline-block;
         position: relative;
         &::after {
@@ -131,7 +132,7 @@
       }
     }
 
-    .contact-button {
+    &__button {
       font-family: "Fira Code", monospace;
       font-size: 1rem;
       line-height: 1.5rem;
@@ -220,15 +221,15 @@
       padding: 10rem 5rem;
       gap: 5rem;
 
-      .hero-text {
+      &__text {
         gap: 1.5rem;
       }
 
-      .hero-subtext {
+      &__subtext {
         font-size: 2.25rem;
         line-height: 2.5rem;
 
-        .hero-underlined {
+        &--underlined {
           &::after {
             top: 2.5rem;
             width: 10rem;
@@ -237,7 +238,7 @@
         }
       }
 
-      .contact-button {
+      &__button {
         font-size: 1.5rem;
         line-height: 2rem;
         padding: 1.25rem 1.75rem;
