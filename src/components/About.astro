@@ -1,0 +1,65 @@
+<section class="about">
+  <div class="about__content">
+    <h2 class="about__title" id="about">ABOUT</h2>
+    <div class="about__text">
+      <p>
+        Hey there ! My name is Tom, and I'm a computer engineering student at
+        TELECOM Nancy in France.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .about {
+    --magic-number: 0.06139;
+    --skew-angle: -7deg;
+    --content-width: 100vw;
+    --skew-padding: calc(var(--content-width) * var(--magic-number));
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--skew-padding) 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-color: var(--color-text);
+      transform: skewY(var(--skew-angle));
+    }
+
+    &__content {
+      padding: 1rem;
+      color: var(--color-background-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &__title {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      font-weight: 600;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .about {
+      --magic-number: 0.03496;
+      --skew-angle: -4deg;
+    }
+  }
+</style>
