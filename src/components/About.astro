@@ -1,12 +1,48 @@
 <section class="about">
   <div class="about__me">
-    <h2 class="about__title" id="about">ABOUT</h2>
-    <p class="about__text">
-      Hey there ! My name is Tom, and I'm a computer engineering student at
-      TELECOM Nancy in France. I'm mainly interested in web developement,
-      systems programming and writing compilers, but I like to do a bit of
-      everything !
-    </p>
+    <div class="about__me-content">
+      <h2 class="about__title" id="about">ABOUT</h2>
+      <p class="about__text">
+        Hey there ! My name is Tom, and I'm a computer engineering student at
+        TELECOM Nancy in France. I'm mainly interested in web developement,
+        systems programming and writing compilers, but I like to do a bit of
+        everything !
+      </p>
+    </div>
+  </div>
+  <div class="about__techs">
+    <div class="about__tech-wrapper">
+      <div class="about__tech">
+        <p>
+          Techs techs techs techs techs techs techs echs techs techs techs techs
+          techs techs
+        </p>
+        <p aria-hidden="true">
+          Techs techs techs techs techs techs techs techs techs techs techs
+          techs techs techs
+        </p>
+      </div>
+      <div class="about__tech">
+        <p>
+          Svelte React Flask SvelteKit Astro TypeScript Svelte React Flask
+          SvelteKit Astro TypeScript
+        </p>
+        <p aria-hidden="true">
+          Svelte React Flask SvelteKit Astro TypeScript Svelte React Flask
+          SvelteKit Astro TypeScript
+        </p>
+      </div>
+      <div class="about__tech">
+        <p>
+          Python Golang C OCaml Matlab TypeScript Python Golang C OCaml Matlab
+          TypeScript
+        </p>
+        <p aria-hidden="true">
+          Python Golang C OCaml Matlab TypeScript Python Golang C OCaml Matlab
+          TypeScript
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -19,28 +55,31 @@
     position: relative;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--skew-padding) 0;
     margin: 4rem 0 var(--skew-padding) 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
+    &__me {
       background-color: var(--color-text);
       transform: skewY(var(--skew-angle));
-    }
-
-    &__me {
-      padding: 2.5rem;
-      color: var(--color-background-dark);
+      padding: var(--skew-padding) 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1.5rem;
+      width: 100%;
+
+      &-content {
+        width: 100%;
+        transform: skewY(calc(var(--skew-angle) * -1));
+        padding: 2.5rem;
+        color: var(--color-background-dark);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+      }
     }
 
     &__title {
@@ -56,6 +95,49 @@
       line-height: 1.5rem;
       text-align: justify;
     }
+
+    &__techs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      transform: skewY(var(--skew-angle));
+      background-color: var(--color-background-dark);
+      color: var(--color-text);
+    }
+
+    &__tech-wrapper {
+      max-width: 100%;
+      overflow: hidden;
+      padding-block: 1rem;
+    }
+
+    &__tech {
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1.25rem;
+      text-transform: uppercase;
+      font-family: "Fire Code", monospace;
+
+      &:nth-of-type(even) {
+        animation: slide 25s linear infinite;
+      }
+
+      &:nth-of-type(odd) {
+        animation: slide 25s linear infinite reverse;
+      }
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      > p {
+        display: inline-block;
+      }
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -63,7 +145,7 @@
       --magic-number: 0.04374;
       --skew-angle: -5deg;
 
-      &__me {
+      &__me-content {
         gap: 4rem;
         padding: 3rem;
         max-width: 50rem;
@@ -79,6 +161,20 @@
         font-size: 1.5rem;
         line-height: 2rem;
       }
+
+      &__tech {
+        font-size: 2.25rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
     }
   }
 </style>
