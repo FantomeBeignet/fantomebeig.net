@@ -1,6 +1,11 @@
 <script>
   let isMenuOpen = false;
   function toggleMenu() {
+    if (isMenuOpen) {
+      document.body.style.overflowY = "auto";
+    } else {
+      document.body.style.overflowY = "hidden";
+    }
     isMenuOpen = !isMenuOpen;
   }
   function closeMenu() {
