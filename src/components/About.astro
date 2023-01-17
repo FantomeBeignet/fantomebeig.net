@@ -14,32 +14,110 @@
     <div class="about__tech-wrapper">
       <div class="about__tech">
         <p>
-          Techs techs techs techs techs techs techs techs techs techs techs techs
-          techs techs
+          <span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span>
         </p>
         <p aria-hidden="true">
-          Techs techs techs techs techs techs techs techs techs techs techs
-          techs techs techs
+          <span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span><span
+            class="about__tech-item">tech</span
+          ><span class="about__tech-item">tech</span>
         </p>
       </div>
       <div class="about__tech">
         <p>
-          Svelte React Flask SvelteKit Astro TypeScript Flutter Svelte React
-          Flask SvelteKit Astro TypeScript Flutter
+          <span class="about__tech-item">Svelte</span><span
+            class="about__tech-item">React</span
+          ><span class="about__tech-item">Flask</span><span
+            class="about__tech-item">SvelteKit</span
+          ><span class="about__tech-item">Astro</span><span
+            class="about__tech-item">TypeScript</span
+          ><span class="about__tech-item">Flutter</span><span
+            class="about__tech-item">Svelte</span
+          ><span class="about__tech-item">React</span><span
+            class="about__tech-item">Flask</span
+          ><span class="about__tech-item">SvelteKit</span><span
+            class="about__tech-item">Astro</span
+          ><span class="about__tech-item">TypeScript</span><span
+            class="about__tech-item">Flutter</span
+          >
         </p>
         <p aria-hidden="true">
-          Svelte React Flask SvelteKit Astro TypeScript Flutter Svelte React
-          Flask SvelteKit Astro TypeScript Flutter
+          <span class="about__tech-item">Svelte</span><span
+            class="about__tech-item">React</span
+          ><span class="about__tech-item">Flask</span><span
+            class="about__tech-item">SvelteKit</span
+          ><span class="about__tech-item">Astro</span><span
+            class="about__tech-item">TypeScript</span
+          ><span class="about__tech-item">Flutter</span><span
+            class="about__tech-item">Svelte</span
+          ><span class="about__tech-item">React</span><span
+            class="about__tech-item">Flask</span
+          ><span class="about__tech-item">SvelteKit</span><span
+            class="about__tech-item">Astro</span
+          ><span class="about__tech-item">TypeScript</span><span
+            class="about__tech-item">Flutter</span
+          >
         </p>
       </div>
       <div class="about__tech">
         <p>
-          Python Golang C OCaml Matlab TypeScript Python Golang C OCaml Matlab
-          TypeScript Dart
+          <span class="about__tech-item">Python</span><span
+            class="about__tech-item">Golang</span
+          ><span class="about__tech-item">C</span><span class="about__tech-item"
+            >Ocaml</span
+          ><span class="about__tech-item">Matlab</span><span
+            class="about__tech-item">Dart</span
+          ><span class="about__tech-item">TypeScript</span><span
+            class="about__tech-item">Python</span
+          ><span class="about__tech-item">Golang</span><span
+            class="about__tech-item">C</span
+          ><span class="about__tech-item">Ocaml</span><span
+            class="about__tech-item">Matlab</span
+          ><span class="about__tech-item">Dart</span><span
+            class="about__tech-item">TypeScript</span
+          >
         </p>
         <p aria-hidden="true">
-          Python Golang C OCaml Matlab TypeScript Python Golang C OCaml Matlab
-          TypeScript Dart
+          <span class="about__tech-item">Python</span><span
+            class="about__tech-item">Golang</span
+          ><span class="about__tech-item">C</span><span class="about__tech-item"
+            >Ocaml</span
+          ><span class="about__tech-item">Matlab</span><span
+            class="about__tech-item">Dart</span
+          ><span class="about__tech-item">TypeScript</span><span
+            class="about__tech-item">Python</span
+          ><span class="about__tech-item">Golang</span><span
+            class="about__tech-item">C</span
+          ><span class="about__tech-item">Ocaml</span><span
+            class="about__tech-item">Matlab</span
+          ><span class="about__tech-item">Dart</span><span
+            class="about__tech-item">TypeScript</span
+          >
         </p>
       </div>
     </div>
@@ -116,7 +194,7 @@
     &__tech {
       white-space: nowrap;
       overflow: hidden;
-      display: inline-block;
+      display: inline-flex;
       font-size: 1.5rem;
       line-height: 1.25rem;
       text-transform: uppercase;
@@ -136,6 +214,16 @@
 
       > p {
         display: inline-block;
+      }
+
+      &-item {
+        display: inline-block;
+        margin-inline: 0.5rem;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--color-accent);
+        }
       }
     }
   }
