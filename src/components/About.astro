@@ -12,7 +12,7 @@
   </div>
   <div class="about__techs">
     <div class="about__tech-wrapper">
-      <div class="about__tech">
+      <div class="about__tech bigger">
         <p>
           <span class="about__tech-item">techs</span><span
             class="about__tech-item">techs</span
@@ -120,7 +120,7 @@
           >
         </p>
       </div>
-      <div class="about__tech">
+      <div class="about__tech bigger">
         <p>
           <span class="about__tech-item">tools</span><span
             class="about__tech-item">tools</span
@@ -304,6 +304,11 @@
     }
   }
 
+  .bigger {
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+
   @media screen and (min-width: 1024px) {
     .about {
       --magic-number: 0.04374;
@@ -330,6 +335,11 @@
         font-size: 2.5rem;
         line-height: 1;
       }
+    }
+
+    .bigger {
+      font-size: 3rem;
+      line-height: 1;
     }
   }
 
