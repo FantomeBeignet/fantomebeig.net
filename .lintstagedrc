@@ -1,0 +1,3 @@
+{
+  "**/*.{css,scss,astro,svelte}": ["prettier --write", "stylelint --fix"]
+}
