@@ -307,10 +307,25 @@
       &-item {
         display: inline-block;
         margin-inline: 0.5rem;
-        transition: color 0.2s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        position: relative;
 
-        &:hover {
-          color: color(primary);
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0.15rem;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 0.5rem;
+          transform: scaleX(0);
+          transform-origin: center;
+          background-color: color(primary);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
         }
       }
     }
