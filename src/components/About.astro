@@ -227,7 +227,7 @@
     margin: 4rem 0 var(--skew-padding) 0;
 
     &__me {
-      background-color: var(--color-text);
+      background-color: color(neutral, 100);
       transform: skewY(var(--skew-angle));
       padding: var(--skew-padding) 0;
       display: flex;
@@ -239,7 +239,7 @@
         width: 100%;
         transform: skewY(calc(var(--skew-angle) * -1));
         padding: 2.5rem;
-        color: var(--color-background-dark);
+        color: color(neutral, 900);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -269,8 +269,8 @@
       align-items: center;
       width: 100%;
       transform: skewY(var(--skew-angle));
-      background-color: var(--color-background-dark);
-      color: var(--color-text);
+      background-color: color(neutral, 900);
+      color: color(neutral, 100);
     }
 
     &__tech-wrapper {
@@ -310,7 +310,7 @@
         transition: color 0.2s ease-in-out;
 
         &:hover {
-          color: var(--color-accent);
+          color: color(primary);
         }
       }
     }
