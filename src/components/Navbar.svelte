@@ -21,7 +21,9 @@
   </h3>
   <ul class="navbar__links" aria-expanded={isMenuOpen ? "true" : "false"}>
     <li class="navbar__link"><a href="/" on:click={closeMenu}>// home</a></li>
-    <li class="navbar__link"><a href="/#about" on:click={closeMenu}>// about</a></li>
+    <li class="navbar__link">
+      <a href="/#about" on:click={closeMenu}>// about</a>
+    </li>
     <li class="navbar__link">// projects</li>
     <li class="navbar__link">// contact</li>
   </ul>
@@ -43,14 +45,14 @@
       flex: 1;
       font-size: 1.25rem;
       line-height: 1.75rem;
-      color: var(--color-text);
+      color: color(neutral, 100);
 
       &--blink {
         animation: blink 1.2s steps(1, start) infinite;
       }
 
       &--highlight {
-        color: var(--color-accent);
+        color: color(primary);
       }
     }
 
@@ -66,27 +68,27 @@
       align-items: flex-start;
       justify-content: center;
       gap: 1.5rem;
-      background-color: var(--color-text);
+      background-color: color(neutral, 100);
       padding: 1.5rem;
       opacity: 0;
       transition: opacity 0.2s ease-in-out;
 
       &:hover > li:not(:hover) {
-        color: var(--color-background-light);
+        color: color(neutral, 400);
       }
     }
 
     &__link {
       font-size: 1.25rem;
       line-height: 1.75rem;
-      color: var(--color-text);
+      color: color(neutral, 100);
       transition: color 0.2s ease-in-out;
     }
 
     &__button {
       z-index: 9999;
       display: flex;
-      color: var(--color-text);
+      color: color(neutral, 100);
       font-size: 1.25rem;
       line-height: 1.75rem;
     }
@@ -102,7 +104,7 @@
 
       .navbar__link,
       .navbar__button {
-        color: var(--color-background-dark);
+        color: color(neutral, 900);
       }
     }
   }
