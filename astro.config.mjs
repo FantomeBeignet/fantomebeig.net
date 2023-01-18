@@ -3,11 +3,11 @@ import { fileURLToPath, URL } from "url";
 
 // https://astro.build/config
 import svelte from "@astrojs/svelte";
+import preprocess from "svelte-preprocess";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.fantomebeig.net",
-  integrations: [svelte()],
   vite: {
     resolve: {
       alias: {
@@ -22,4 +22,13 @@ export default defineConfig({
       },
     },
   },
+  integrations: [svelte({
+    preprocess: [
+      preprocess({
+        scss: {
+          prependData: `@use "../styles/style.scss" as *;`,
+        },
+      }),
+    ],
+  })],
 });
