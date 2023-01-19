@@ -21,6 +21,8 @@
     "svelte": "^3.55.0"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.4.2",
+    "commitlint": "^17.4.2",
     "cssnano": "^5.1.14",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
