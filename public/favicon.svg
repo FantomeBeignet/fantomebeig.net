@@ -1,13 +1,280 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="302.88pt"
+    height="313.92pt"
+    viewBox="0 0 302.88 313.92">
+<defs>
+  <marker id="lineMarker0" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker0" fill="none">
+     <g id="lineMarker01" fill="none">
+      <g id="lineMarker01" fill="none">
+       <g id="lineMarker011" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker1" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker1" fill="none">
+     <g id="lineMarker11" fill="none">
+      <g id="lineMarker11" fill="none">
+       <g id="lineMarker111" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker2" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker2" fill="none">
+     <g id="lineMarker21" fill="none">
+      <g id="lineMarker21" fill="none">
+       <g id="lineMarker211" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker3" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker3" fill="none">
+     <g id="lineMarker31" fill="none">
+      <g id="lineMarker31" fill="none">
+       <g id="lineMarker311" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker4" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker4" fill="none">
+     <g id="lineMarker41" fill="none">
+      <g id="lineMarker41" fill="none">
+       <g id="lineMarker411" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker5" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker5" fill="none">
+     <g id="lineMarker51" fill="none">
+      <g id="lineMarker51" fill="none">
+       <g id="lineMarker511" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker6" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker6" fill="none">
+     <g id="lineMarker61" fill="none">
+      <g id="lineMarker61" fill="none">
+       <g id="lineMarker611" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker7" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker7" fill="none">
+     <g id="lineMarker71" fill="none">
+      <g id="lineMarker71" fill="none">
+       <g id="lineMarker711" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker8" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker8" fill="none">
+     <g id="lineMarker81" fill="none">
+      <g id="lineMarker81" fill="none">
+       <g id="lineMarker811" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker9" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker9" fill="none">
+     <g id="lineMarker91" fill="none">
+      <g id="lineMarker91" fill="none">
+       <g id="lineMarker911" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker10" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker10" fill="none">
+     <g id="lineMarker101" fill="none">
+      <g id="lineMarker101" fill="none">
+       <g id="lineMarker1011" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker11" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker11" fill="none">
+     <g id="lineMarker111" fill="none">
+      <g id="lineMarker111" fill="none">
+       <g id="lineMarker1111" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker12" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker12" fill="none">
+     <g id="lineMarker121" fill="none">
+      <g id="lineMarker121" fill="none">
+       <g id="lineMarker1211" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker13" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker13" fill="none">
+     <g id="lineMarker131" fill="none">
+      <g id="lineMarker131" fill="none">
+       <g id="lineMarker1311" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker14" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker14" fill="none">
+     <g id="lineMarker141" fill="none">
+      <g id="lineMarker141" fill="none">
+       <g id="lineMarker1411" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker15" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker15" fill="none">
+     <g id="lineMarker151" fill="none">
+      <g id="lineMarker151" fill="none">
+       <g id="lineMarker1511" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <marker id="lineMarker16" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker16" fill="none">
+     <g id="lineMarker161" fill="none">
+      <g id="lineMarker161" fill="none">
+       <g id="lineMarker1611" fill="none">
+        <g id="Arrow1Sstart" fill="none">
+         <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+  <linearGradient id="gradient0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1.4142135623731" y2="0" spreadMethod="pad">
+   <stop stop-color="#c265fe" offset="0" stop-opacity="1"/>
+   <stop stop-color="#000000" offset="1" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gradient1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1.4142135623731" y2="0" spreadMethod="pad">
+   <stop stop-color="#c265fe" offset="0" stop-opacity="1"/>
+   <stop stop-color="#000000" offset="1" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gradient2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1.4142135623731" y2="0" spreadMethod="pad">
+   <stop stop-color="#c265fe" offset="0" stop-opacity="1"/>
+   <stop stop-color="#000000" offset="1" stop-opacity="0"/>
+  </linearGradient>
+  <marker id="lineMarker17" markerUnits="strokeWidth" refX="0" refY="0" markerWidth="3" markerHeight="3" orient="auto">
+      <defs/>
+   <g id="lineMarker17" fill="none">
+     <g id="lineMarker171" fill="none">
+      <g id="lineMarker171" fill="none">
+       <g id="lineMarker0" fill="none">
+        <g id="lineMarker8" fill="none">
+         <g id="Arrow1Sstart" fill="none">
+          <path id="path4154" transform="matrix(0.2 0 0 0.2 -1.3 -1)" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="2.8" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="2" d="M12.5 5L17.5 0L0 5L17.5 10Z" sodipodi:nodetypes="ccccc"/>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+  </marker>
+ </defs>
+<path id="shape0" transform="matrix(0.999999885023153 0 0 0.999999885023153 103.98101019908 198.840641720217)" fill="#f0e3db" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M28.0089 0L0 37.0586L52.398 43.6787L82.1991 1.61124L28.0089 0" sodipodi:nodetypes="ccccc"/><path id="shape1" transform="matrix(0.999999885023153 0 0 0.999999885023153 45.4955883521199 4.56268639372933)" fill="#f0e3db" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M1.65171 23.0516C28.7623 8.50168 48.8513 -8.69053 81.8477 5.01267C90.8915 8.76852 79.3608 16.6928 73.1674 20.95C67.4286 24.8947 47.6358 31.8316 42.2417 24.5578C38.6157 19.6681 55.5765 20.299 47.6186 16.1863C44.4275 14.5371 40.7618 14.0588 37.2163 14.0146C35.0159 13.9872 32.8045 13.9797 30.6094 14.1547C23.1642 14.7484 2.67612 24.4885 0 24.0674" sodipodi:nodetypes="cccccccc"/><path id="shape2" transform="matrix(0.999999885023153 0 0 0.999999885023153 3.0721789310281 70.8244476306963)" fill="#f0e3db" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M156.813 149.856C150.604 117.673 100.276 217.82 81.5023 168.073C57.8836 105.489 169.469 83.5058 181.295 92.646C193.121 101.786 225.768 -45.7602 190.821 14.5118C155.874 74.7837 160.518 67.1861 128.882 81.3608C97.2458 95.5355 73.714 96.0275 49.0898 105.845C29.9857 113.461 -0.965787 136.968 0.0231287 158.981C2.19387 209.554 48.9044 237.435 95.2954 235.656C141.686 233.876 163.649 184.218 156.813 149.856Z" sodipodi:nodetypes="cczzcsccc"/><path id="shape3" transform="matrix(0.999999885023153 0 0 0.999999885023153 207.464284015184 197.157398670509)" fill="none" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker0)" krita:marker-fill-method="auto" d="M10.2793 0L0 11.4188" sodipodi:nodetypes="cc"/><path id="shape4" transform="matrix(0.999999885023153 0 0 0.999999885023153 115.169723198349 213.31718059629)" fill="#ebebff" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker1)" krita:marker-fill-method="auto" d="M9.84 7.38032L0 0" sodipodi:nodetypes="cc"/><ellipse id="shape5" transform="matrix(0.999999885023153 0 0 0.999999885023153 46.2037703750687 40.7081946178028)" rx="106.770279244099" ry="105.110388080762" cx="106.770279244099" cy="105.110388080762" fill="none" stroke="#caa87b" stroke-width="74.4" stroke-linecap="square" stroke-linejoin="bevel"/><path id="shape01" transform="matrix(0.999999909090641 0 0 0.999999909090641 19.3851619152517 15.898766210063)" fill="#c792ea" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M134.947 23.184L134.667 23.208L134.343 23.189L133.977 23.129L133.568 23.03L133.12 22.893L132.632 22.72L132.107 22.512L131.546 22.271L130.949 21.998L130.317 21.696L129.653 21.365L128.957 21.007L128.231 20.624L127.476 20.217L126.692 19.787L125.883 19.337L125.047 18.868L124.186 18.381L123.303 17.878L122.398 17.361L121.472 16.83L120.527 16.288L119.564 15.736L118.583 15.176L117.587 14.609L116.576 14.037L115.552 13.461L114.514 12.883L113.468 12.304L112.411 11.726L111.345 11.151L110.273 10.579L109.194 10.014L108.111 9.455L107.024 8.905L105.935 8.366L104.844 7.838L103.754 7.323L102.665 6.823L101.578 6.34L100.496 5.875L99.418 5.429L98.347 5.004L97.282 4.602L96.227 4.224L95.182 3.872L94.147 3.547L93.125 3.251L92.117 2.985L91.123 2.751L90.145 2.55L89.185 2.385L88.242 2.256L87.32 2.165L86.418 2.114L85.539 2.104L84.683 2.136L83.851 2.213L83.045 2.336L82.266 2.506L81.516 2.725L80.794 2.995L80.104 3.316L79.148 3.828L78.23 4.355L77.348 4.899L76.501 5.459L75.689 6.033L74.911 6.623L74.164 7.226L73.449 7.844L72.763 8.475L72.107 9.119L71.479 9.776L70.878 10.445L70.303 11.126L69.752 11.818L69.226 12.521L68.722 13.234L68.239 13.958L67.778 14.691L67.335 15.434L66.912 16.185L66.506 16.944L66.116 17.712L65.741 18.487L65.381 19.269L65.034 20.057L64.699 20.852L64.375 21.652L64.062 22.458L63.757 23.269L63.46 24.085L63.17 24.904L62.886 25.727L62.607 26.553L62.331 27.382L62.058 28.213L61.786 29.047L61.515 29.881L61.244 30.717L60.971 31.554L60.695 32.39L60.416 33.227L60.131 34.062L59.841 34.897L59.544 35.73L59.239 36.561L58.926 37.39L58.602 38.216L58.267 39.039L57.919 39.858L57.559 40.674L57.184 41.484L56.794 42.29L56.388 43.09L55.964 43.885L55.522 44.673L55.06 45.455L54.577 46.229L54.073 46.996L53.546 47.755L52.995 48.506L52.419 49.248L51.818 49.981L51.189 50.704L50.272 51.684L49.34 52.594L48.394 53.438L47.436 54.217L46.467 54.936L45.488 55.598L44.5 56.205L43.506 56.761L42.506 57.27L41.502 57.733L40.494 58.155L39.486 58.538L38.477 58.886L37.469 59.202L36.464 59.489L35.462 59.749L34.466 59.987L33.476 60.206L32.494 60.408L31.522 60.597L30.56 60.775L29.61 60.947L28.673 61.115L27.752 61.282L26.846 61.452L25.957 61.627L25.088 61.811L24.238 62.007L23.41 62.218L22.605 62.447L21.824 62.698L21.068 62.973L20.34 63.276L19.639 63.61L18.968 63.977L18.329 64.382L17.721 64.827L17.147 65.316L16.608 65.851L16.106 66.436L15.641 67.074L15.215 67.768L14.83 68.521L14.487 69.337L14.187 70.218L13.931 71.168L13.721 72.189L13.558 73.286L13.444 74.461L13.38 75.717L13.367 77.057L13.407 78.485L13.501 80.004L13.65 81.616L13.855 83.326L14.119 85.136L14.442 87.049L14.826 89.069L15.273 91.198L15.782 93.44L16.357 95.798L16.997 98.275L17.706 100.875L17.41 101.892L17.101 102.912L16.778 103.934L16.443 104.958L16.096 105.984L15.737 107.012L15.368 108.041L14.989 109.072L14.601 110.104L14.205 111.137L13.802 112.17L13.392 113.205L12.976 114.241L12.554 115.276L12.129 116.312L11.699 117.348L11.267 118.384L10.832 119.42L10.396 120.454L9.959 121.489L9.522 122.524L9.085 123.556L8.651 124.589L8.218 125.619L7.789 126.648L7.363 127.676L6.942 128.702L6.526 129.727L6.116 130.75L5.713 131.769L5.317 132.787L4.929 133.802L4.551 134.815L4.182 135.824L3.824 136.832L3.477 137.835L3.142 138.835L2.819 139.832L2.51 140.825L2.215 141.814L1.936 142.8L1.672 143.781L1.424 144.757L1.194 145.731L0.981 146.698L0.787 147.661L0.613 148.619L0.459 149.572L0.326 150.519L0.214 151.462L0.125 152.398L0.06 153.329L0.018 154.254L0 155.172L0.009 156.085L0.043 156.992L0.104 157.89L0.193 158.784L0.311 159.669L0.457 160.548L0.634 161.42L0.841 162.283L1.079 163.141L1.369 164.005L1.705 164.825L2.088 165.602L2.515 166.338L2.984 167.032L3.495 167.687L4.046 168.305L4.634 168.886L5.26 169.433L5.92 169.946L6.614 170.427L7.341 170.878L8.097 171.299L8.883 171.693L9.696 172.06L10.535 172.403L11.398 172.722L12.285 173.019L13.192 173.297L14.119 173.554L15.065 173.794L16.027 174.018L17.005 174.227L17.996 174.422L18.999 174.605L20.013 174.779L21.036 174.943L22.066 175.099L23.103 175.249L24.144 175.393L25.187 175.535L26.233 175.675L27.278 175.814L28.321 175.955L29.361 176.096L30.396 176.243L31.426 176.394L32.447 176.552L33.459 176.718L34.46 176.893L35.449 177.079L36.423 177.278L37.383 177.489L38.325 177.717L39.249 177.96L40.152 178.222L41.034 178.504L41.893 178.807L42.728 179.131L43.535 179.48L44.316 179.852L45.067 180.252L45.787 180.681L46.475 181.138L47.129 181.627L47.748 182.147L48.329 182.702L48.872 183.292L49.376 183.918L49.837 184.582L50.256 185.285L50.63 186.03L50.958 186.817L51.247 187.635L51.507 188.473L51.74 189.33L51.947 190.204L52.128 191.095L52.286 192.001L52.423 192.923L52.539 193.858L52.635 194.807L52.714 195.768L52.776 196.74L52.823 197.724L52.857 198.717L52.879 199.717L52.89 200.727L52.891 201.743L52.884 202.764L52.871 203.793L52.853 204.824L52.831 205.859L52.807 206.896L52.781 207.935L52.757 208.974L52.734 210.013L52.714 211.051L52.699 212.086L52.69 213.12L52.688 214.149L52.695 215.173L52.713 216.192L52.742 217.205L52.785 218.21L52.841 219.207L52.914 220.194L53.004 221.172L53.113 222.139L53.241 223.093L53.392 224.035L53.565 224.963L53.762 225.877L53.985 226.775L54.236 227.657L54.515 228.522L54.823 229.368L55.163 230.197L55.536 231.003L55.943 231.79L56.385 232.557L56.864 233.299L57.382 234.018L57.939 234.713L58.538 235.382L59.179 236.026L59.864 236.642L60.594 237.23L61.371 237.789L62.197 238.32L63.071 238.818L63.997 239.285L64.975 239.721L66.007 240.123L67.094 240.49L68.238 240.823L69.655 241.186L71.07 241.542L72.482 241.893L73.892 242.236L75.299 242.572L76.704 242.9L78.107 243.221L79.507 243.533L80.904 243.835L82.3 244.129L83.694 244.412L85.086 244.686L86.475 244.948L87.863 245.2L89.249 245.44L90.633 245.668L92.016 245.885L93.397 246.088L94.777 246.278L96.155 246.456L97.532 246.618L98.908 246.767L100.282 246.901L101.655 247.02L103.028 247.123L104.399 247.211L105.769 247.282L107.138 247.337L108.507 247.374L109.875 247.394L111.242 247.395L112.61 247.379L113.975 247.344L115.342 247.289L116.707 247.214L118.073 247.12L119.437 247.005L120.802 246.869L122.167 246.712L123.532 246.534L124.897 246.333L126.262 246.109L127.627 245.864L128.993 245.594L130.359 245.302L131.726 244.984L133.093 244.642L134.46 244.276L135.829 243.883L137.198 243.466L138.568 243.021L139.939 242.551L141.311 242.053L142.683 241.528L144.057 240.974L145.433 240.394L146.808 239.784L148.186 239.145L149.565 238.476L150.946 237.778L152.328 237.049L153.711 236.291L155.096 235.501L156.755 235.777L158.387 236.033L159.99 236.269L161.566 236.484L163.115 236.679L164.638 236.852L166.133 237.006L167.605 237.138L169.05 237.25L170.471 237.341L171.868 237.411L173.24 237.46L174.589 237.489L175.914 237.497L177.216 237.483L178.497 237.449L179.755 237.395L180.992 237.319L182.207 237.221L183.403 237.104L184.578 236.965L185.732 236.805L186.868 236.624L187.984 236.422L189.083 236.199L190.162 235.954L191.224 235.689L192.268 235.402L193.296 235.094L194.306 234.765L195.302 234.414L196.28 234.043L197.244 233.649L198.193 233.235L199.128 232.8L200.048 232.342L200.955 231.864L201.847 231.364L202.728 230.842L203.596 230.299L204.453 229.734L205.298 229.149L206.132 228.541L206.953 227.911L207.766 227.262L208.569 226.589L209.362 225.895L210.146 225.179L210.921 224.441L211.688 223.682L212.447 222.901L213.199 222.099L213.943 221.274L214.681 220.428L215.413 219.559L216.139 218.669L216.86 217.758L217.576 216.824L218.287 215.868L218.994 214.889L219.697 213.89L220.398 212.868L221.095 211.823L221.943 211.236L222.739 210.648L223.486 210.059L224.183 209.468L224.834 208.874L225.443 208.277L226.009 207.675L226.534 207.069L227.023 206.456L227.475 205.837L227.894 205.211L228.284 204.576L228.642 203.933L228.974 203.281L229.281 202.618L229.566 201.943L229.829 201.257L230.075 200.559L230.303 199.847L230.517 199.121L230.72 198.379L230.911 197.623L231.096 196.85L231.273 196.06L231.448 195.251L231.622 194.424L231.794 193.577L231.971 192.711L232.151 191.824L232.339 190.914L232.534 189.982L232.742 189.027L232.962 188.048L233.199 187.044L233.453 186.014L233.725 184.959L234.02 183.876L234.338 182.765L234.683 181.626L235.055 180.457L235.458 179.258L235.891 178.028L236.361 176.768L236.866 175.473L237.41 174.147L237.995 172.787L238.622 171.392L239.295 169.96L240.014 168.494L240.784 166.99L241.603 165.448L242.477 163.868L243.406 162.248L244.393 160.589L245.439 158.889L246.547 157.148L247.72 155.364L248.958 153.537L250.264 151.667L251.642 149.751L253.091 147.791L254.615 145.784L256.215 143.731L256.854 142.527L257.462 141.354L258.038 140.212L258.584 139.099L259.097 138.015L259.581 136.958L260.035 135.925L260.457 134.918L260.85 133.934L261.211 132.971L261.543 132.03L261.846 131.107L262.118 130.203L262.361 129.316L262.574 128.445L262.759 127.587L262.913 126.743L263.04 125.912L263.137 125.092L263.205 124.281L263.245 123.477L263.256 122.681L263.239 121.892L263.194 121.106L263.121 120.325L263.02 119.546L262.891 118.767L262.734 117.988L262.551 117.208L262.34 116.425L262.102 115.638L261.836 114.846L261.543 114.047L261.224 113.24L260.88 112.426L260.507 111.599L260.109 110.763L259.684 109.913L259.234 109.05L258.758 108.172L258.256 107.277L257.728 106.365L257.176 105.434L256.597 104.483L255.994 103.511L255.366 102.516L254.712 101.498L254.034 100.455L253.331 99.385L252.604 98.288L251.852 97.163L251.077 96.007L250.277 94.821L249.453 93.602L248.606 92.349L247.736 91.062L246.842 89.739L245.924 88.378L244.984 86.979L244.02 85.541L243.033 84.061L242.025 82.539L240.993 80.974L240.471 80.194L239.941 79.422L239.403 78.658L238.856 77.901L238.302 77.15L237.739 76.407L237.169 75.67L236.592 74.939L236.007 74.215L235.417 73.496L234.818 72.783L234.215 72.075L233.605 71.372L232.99 70.675L232.369 69.982L231.743 69.293L231.112 68.609L230.476 67.928L229.837 67.252L229.192 66.579L228.544 65.909L227.892 65.243L227.237 64.579L226.579 63.918L225.918 63.26L225.255 62.603L224.589 61.949L223.92 61.296L223.25 60.645L222.578 59.995L221.905 59.346L221.232 58.698L220.557 58.05L219.882 57.403L219.206 56.756L218.531 56.109L217.855 55.462L217.181 54.814L216.506 54.165L215.833 53.516L215.162 52.865L214.491 52.212L213.823 51.558L213.156 50.902L212.492 50.244L211.83 49.583L211.171 48.92L210.515 48.254L209.862 47.585L209.214 46.913L208.569 46.237L207.927 45.558L207.291 44.874L206.659 44.187L206.032 43.494L205.41 42.798L204.793 42.096L204.182 41.389L203.576 40.677L202.978 39.959L202.386 39.236L201.8 38.506L201.22 37.771L200.811 37.184L200.441 36.583L200.107 35.968L199.808 35.341L199.542 34.701L199.307 34.051L199.101 33.389L198.921 32.717L198.766 32.036L198.634 31.346L198.523 30.649L198.429 29.943L198.354 29.231L198.293 28.514L198.245 27.79L198.207 27.062L198.179 26.331L196.949 25.595L198.14 24.858L198.126 24.118L198.112 23.377L198.098 22.636L198.08 21.894L198.057 21.154L198.027 20.415L197.988 19.678L197.937 18.944L197.873 18.213L197.794 17.487L197.699 16.765L197.583 16.049L197.446 15.339L197.287 14.637L197.102 13.941L196.89 13.254L196.649 12.576L196.377 11.908L196.071 11.249L195.73 10.602L195.352 9.967L194.935 9.344L194.476 8.733L193.975 8.137L193.428 7.555L192.834 6.988L192.191 6.436L191.497 5.902L190.749 5.384L189.946 4.884L189.087 4.402L188.167 3.94L187.188 3.497L186.145 3.075L185.036 2.674L183.86 2.295L182.616 1.938L181.299 1.605L179.91 1.295L178.446 1.01L176.904 0.751L175.283 0.517L173.581 0.31L171.796 0.13L170.784 0.053L169.815 0.01L168.888 0L168.001 0.021L167.154 0.074L166.344 0.156L165.57 0.268L164.831 0.407L164.125 0.574L163.45 0.766L162.807 0.984L162.192 1.226L161.605 1.491L161.042 1.778L160.505 2.087L159.991 2.416L159.497 2.764L159.025 3.131L158.571 3.515L158.134 3.916L157.713 4.333L157.307 4.764L156.912 5.208L156.53 5.665L156.157 6.135L155.793 6.614L155.436 7.104L155.084 7.602L154.736 8.109L154.391 8.622L154.047 9.141L153.703 9.666L153.357 10.194L153.008 10.726L152.655 11.259L152.294 11.794L151.927 12.329L151.551 12.863L151.164 13.396L150.764 13.926L150.352 14.452L149.925 14.974L149.482 15.491L149.021 16.001L148.541 16.503L148.039 16.997L147.516 17.482L146.969 17.956L146.398 18.419L145.799 18.87L145.173 19.308L144.518 19.732L143.83 20.14L143.112 20.532L142.359 20.908L141.571 21.265L140.747 21.604L139.884 21.923L138.981 22.22L138.038 22.496L137.052 22.75L136.022 22.979L134.947 23.184M202.537 129.914L202.515 128.137L202.447 126.369L202.335 124.615L202.178 122.872L201.979 121.143L201.736 119.427L201.451 117.725L201.125 116.038L200.757 114.365L200.348 112.709L199.9 111.068L199.412 109.446L198.885 107.84L198.32 106.252L197.717 104.683L197.076 103.132L196.398 101.602L195.686 100.092L194.937 98.602L194.152 97.134L193.334 95.687L192.481 94.264L191.594 92.863L190.676 91.485L189.724 90.132L188.742 88.804L187.727 87.5L186.683 86.223L185.607 84.972L184.504 83.747L183.37 82.551L182.208 81.382L181.018 80.242L179.801 79.131L178.557 78.05L177.288 76.999L175.992 75.978L174.671 74.99L173.326 74.033L171.957 73.108L170.564 72.217L169.148 71.359L167.71 70.536L166.251 69.747L164.771 68.993L163.269 68.276L161.747 67.594L160.206 66.95L158.646 66.343L157.068 65.774L155.471 65.244L153.857 64.754L152.227 64.302L150.58 63.892L148.918 63.522L147.241 63.193L145.549 62.907L143.843 62.663L142.124 62.462L140.391 62.305L138.647 62.192L136.89 62.123L135.122 62.101L133.355 62.123L131.599 62.192L129.855 62.305L128.122 62.462L126.403 62.663L124.697 62.907L123.005 63.193L121.328 63.522L119.666 63.892L118.019 64.302L116.388 64.754L114.775 65.244L113.178 65.774L111.6 66.343L110.04 66.95L108.499 67.594L106.977 68.276L105.476 68.993L103.995 69.747L102.535 70.536L101.097 71.359L99.682 72.217L98.289 73.108L96.92 74.033L95.575 74.99L94.254 75.978L92.958 76.999L91.689 78.05L90.445 79.131L89.228 80.242L88.038 81.382L86.876 82.551L85.743 83.747L84.638 84.972L83.563 86.223L82.518 87.5L81.504 88.804L80.521 90.132L79.57 91.485L78.651 92.863L77.765 94.264L76.912 95.687L76.094 97.134L75.31 98.602L74.56 100.092L73.847 101.602L73.17 103.132L72.529 104.683L71.926 106.252L71.361 107.84L70.834 109.446L70.346 111.068L69.897 112.709L69.489 114.365L69.121 116.038L68.794 117.725L68.51 119.427L68.267 121.143L68.067 122.872L67.911 124.615L67.799 126.369L67.731 128.137L67.708 129.914L67.731 131.693L67.799 133.459L67.911 135.214L68.067 136.956L68.267 138.686L68.51 140.402L68.794 142.105L69.121 143.791L69.489 145.463L69.897 147.12L70.346 148.76L70.834 150.384L71.361 151.989L71.926 153.577L72.529 155.146L73.17 156.696L73.847 158.227L74.56 159.737L75.31 161.227L76.094 162.695L76.912 164.141L77.765 165.566L78.651 166.966L79.57 168.343L80.521 169.697L81.504 171.025L82.518 172.328L83.563 173.606L84.638 174.857L85.743 176.081L86.876 177.278L88.038 178.447L89.228 179.587L90.445 180.698L91.689 181.779L92.958 182.83L94.254 183.85L95.575 184.84L96.92 185.796L98.289 186.72L99.682 187.612L101.097 188.47L102.535 189.293L103.995 190.082L105.476 190.835L106.977 191.553L108.499 192.235L110.04 192.879L111.6 193.486L113.178 194.054L114.775 194.584L116.388 195.075L118.019 195.527L119.666 195.938L121.328 196.308L123.005 196.636L124.697 196.922L126.403 197.166L128.122 197.367L129.855 197.524L131.599 197.637L133.355 197.705L135.122 197.728L136.89 197.705L138.647 197.637L140.391 197.524L142.124 197.367L143.843 197.166L145.549 196.922L147.241 196.636L148.918 196.308L150.58 195.938L152.227 195.527L153.857 195.075L155.471 194.584L157.068 194.054L158.646 193.486L160.206 192.879L161.747 192.235L163.269 191.553L164.771 190.835L166.251 190.082L167.71 189.293L169.148 188.47L170.564 187.612L171.957 186.72L173.326 185.796L174.671 184.84L175.992 183.85L177.288 182.83L178.557 181.779L179.801 180.698L181.018 179.587L182.208 178.447L183.37 177.278L184.504 176.081L185.607 174.857L186.683 173.606L187.727 172.328L188.742 171.025L189.724 169.697L190.676 168.343L191.594 166.966L192.481 165.566L193.334 164.141L194.152 162.695L194.937 161.227L195.686 159.737L196.398 158.227L197.076 156.696L197.717 155.146L198.32 153.577L198.885 151.989L199.412 150.384L199.9 148.76L200.348 147.12L200.757 145.463L201.125 143.791L201.451 142.105L201.736 140.402L201.979 138.686L202.178 136.956L202.335 135.214L202.447 133.459L202.515 131.693L202.537 129.914" sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"/><path id="shape7" transform="matrix(0.992633677547631 0 0 0.992285799536246 113.718581699108 54.8319239045805)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker2)" krita:marker-fill-method="auto" d="M0 0L6.2231 0.6821" sodipodi:nodetypes="cc"/><path id="shape8" transform="matrix(0.992633677547631 0 0 0.992285799536246 179.317913143326 59.0640052529565)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker3)" krita:marker-fill-method="auto" d="M0.0222319 0L0 5.52037" sodipodi:nodetypes="cc"/><path id="shape9" transform="matrix(0.992633677547631 0 0 0.992285799536246 246.884546525393 101.621839223575)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker4)" krita:marker-fill-method="auto" d="M0 0L3.69968 2.75335" sodipodi:nodetypes="cc"/><path id="shape10" transform="matrix(0.992633677547631 0 0 0.992285799536246 245.526396618581 131.622485144883)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker5)" krita:marker-fill-method="auto" d="M0 4.26451L3.0676 0" sodipodi:nodetypes="cc"/><path id="shape11" transform="matrix(0.992633677547631 0 0 0.992285799536246 212.04040683591 85.0912545752199)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker6)" krita:marker-fill-method="auto" d="M0.604121 0L0 2.53936" sodipodi:nodetypes="cc"/><path id="shape12" transform="matrix(1.00275504118737 0 0 1.00240361604683 243.440546838485 169.294049287753)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker7)" krita:marker-fill-method="auto" d="M0 0L3.56784 0.166013" sodipodi:nodetypes="cc"/><path id="shape13" transform="matrix(0.992633677547631 0 0 0.992285799536246 182.37080125243 222.257966955993)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker8)" krita:marker-fill-method="auto" d="M0 0L1.8678 1.39124" sodipodi:nodetypes="cc"/><path id="shape14" transform="matrix(0.992633677547631 0 0 0.992285799536246 151.882199651365 233.026090213273)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker9)" krita:marker-fill-method="auto" d="M2.70197 1.5175L0 0" sodipodi:nodetypes="cc"/><path id="shape15" transform="matrix(0.992633677547631 0 0 0.992285799536246 75.8176738581768 168.418373691684)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker10)" krita:marker-fill-method="auto" d="M0 4.3025L0.593258 0" sodipodi:nodetypes="cc"/><path id="shape16" transform="matrix(0.992633677547631 0 0 0.992285799536246 51.0509928999262 140.063997890985)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker11)" krita:marker-fill-method="auto" d="M0 0L2.74378 1.18253" sodipodi:nodetypes="cc"/><path id="shape17" transform="matrix(0.999999885023153 0 0 0.999999885023153 71.4128616167077 110.386478870789)" fill="#e5d0f3" fill-rule="evenodd" stroke="#f0f0ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker12)" krita:marker-fill-method="auto" d="M0 0L0.667714 8.56411" sodipodi:nodetypes="cc"/><path id="shape18" transform="matrix(0.992633677547631 0 0 0.992285799536246 86.9494182078511 98.7321097548625)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker13)" krita:marker-fill-method="auto" d="M3.64913 1.39355L0 0" sodipodi:nodetypes="cc"/><path id="shape19" transform="matrix(0.992633677547631 0 0 0.992285799536246 98.4762743028104 78.600440664758)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker14)" krita:marker-fill-method="auto" d="M2.12272 0L0 2.56791" sodipodi:nodetypes="cc"/><path id="shape20" transform="matrix(0.992633677547631 0 0 0.992285799536246 77.7875831553113 82.1643274772452)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker15)" krita:marker-fill-method="auto" d="M2.64475 0L0 2.1703" sodipodi:nodetypes="cc"/><path id="shape21" transform="matrix(0.992633677547631 0 0 0.992285799536246 95.5445662580933 213.813396593565)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker16)" krita:marker-fill-method="auto" d="M3.21899 0L0 3.89761" sodipodi:nodetypes="cc"/><path id="shape22" transform="matrix(0.999999885023153 0 0 0.999999885023153 103.89337337941 54.5883339815709)" fill="#f0e3db" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M15.8355 0C-21.888 36.5471 16.1959 91.0032 42.9658 76.0262" sodipodi:nodetypes="cc"/><path id="shape23" transform="matrix(0.999999885023153 0 0 0.999999885023153 193.667063131934 74.2392744468868)" fill="#c5b7ab" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M1.34594 44.0107C-2.64653 44.6076 3.39316 32.0123 4.64937 30.4377C9.43576 24.4383 17.783 21.8188 22.9939 15.9891C30.4858 7.60754 20.4538 -6.20274 32.4825 3.09912C37.7638 7.18315 40.4356 13.5437 41.7602 19.9121C46.0729 40.6457 27.161 64.377 8.19879 49.7201C0.348115 43.6519 0.939314 42.3096 1.01208 42.8898C1.09185 43.5259 -0.421321 43.2939 0.625509 43.4678" sodipodi:nodetypes="cccccccc"/><path id="shape24" transform="matrix(0.999999885023153 0 0 0.999999885023153 97.0771538500053 194.754155703583)" fill="#c5b7ab" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M37.4271 0C39.8697 5.6804 22.0431 7.11516 20.6464 8.73924C22.8584 13.9559 12.5311 46.7813 7.33586 54.2653C3.04032 59.0244 3.58095 59.9617 0 64.9226C3.55259 70.8241 7.49387 63.4231 7.68729 64.7734C5.10258 69.3533 5.07407 69.0851 9.79586 69.7823C13.4656 71.5763 16.5012 67.6409 18.9681 59.0115C22.1555 50.7323 26.2152 38.4598 28.9839 34.7552C31.8652 28.4558 34.9021 20.9167 34.554 13.8616C34.4003 10.7471 33.0482 6.46556 30.126 6.05059" sodipodi:nodetypes="cccccccccc"/><path id="shape25" transform="matrix(0.999999885023153 0 0 0.999999885023153 191.48842870918 201.899668395527)" fill="#c5b7ab" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M0 0C6.06248 6.85476 15.0422 30.6849 15.7174 40.8324C18.9381 51.6779 16.1246 42.075 18.318 49.5892C19.6859 51.1813 25.7057 50.4455 24.6789 44.5628C27.3272 49.9257 26.8641 49.6641 29.1771 45.8938C28.408 40.6573 29.3289 47.2347 26.8401 38.5206C24.3514 29.8066 18.4532 5.80096 17.22 4.06314" sodipodi:nodetypes="ccccccc"/><path id="shape26" transform="matrix(0.999999885023153 0 0 0.999999885023153 105.421597974964 53.3254152078584)" fill="#c5b7ab" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M39.2691 78.2434C37.0972 79.3682 28.0224 84.7317 24.327 90.4469C16.7612 102.148 16.2354 120.53 22.8437 133.542C25.3803 138.537 29.686 145.497 35.3721 147.413C36.8859 147.923 38.8913 148.827 40.4745 149.008C56.72 150.351 73.3176 149.962 93.4929 152.269C97.0506 153.244 106.53 157.084 109.905 154.791C108.569 150.117 112.248 162.76 111.293 136.892C111.433 129.164 114.53 118.876 115.668 105.893C115.535 90.387 110.303 80.4535 102.987 72.9457C93.3349 63.6309 73.9597 58.7732 61.4657 65.3274C62.335 66.4816 62.8994 55.7278 57.846 48.4268C38.1498 24.0535 31.6021 33.7552 21.2712 22.7325C15.4714 18.6553 14.4348 3.5828 15.1564 0C12.1916 2.05334 8.70655 6.57723 6.36511 9.63438C0.857506 17.12 -2.47308 29.004 2.27096 37.6385C9.27921 48.1792 25.1324 40.7079 33.8541 55.7351C35.6091 57.6124 43.2079 80.1323 39.2471 79.1454" sodipodi:nodetypes="cccccccccccccccccc"/><path id="shape27" transform="matrix(0.987837182041217 0 0 0.992092793047849 129.466136042167 145.594669377595)" fill="#f0e3db" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M5.21159 49.8703C-9.52288 25.6386 9.27498 -3.21364 33.0401 0.403861C54.1236 3.31087 75.6613 53.068 89.9715 49.4942C92.0512 48.5029 82.7374 30.1753 82.1522 27.7775C79.0002 19.4572 86.4831 -3.82171 90.2663 0.539106C94.0496 4.89992 89.4579 1.81865 92.6499 16.0738C87.1545 28.0976 89.3945 59.9391 86.8511 62.0248C81.7643 66.1964 81.0923 62.2282 76.3879 61.031C51.3028 54.3872 56.7213 61.2988 18.1903 57.9293C9.97806 57.2112 8.42506 55.155 5.21159 49.8703Z" sodipodi:nodetypes="cccczczcss"/><path id="shape28" transform="matrix(0.999999885023153 0 0 0.999999885023153 129.039253917721 144.699891188393)" fill="none" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M2.32447 47.8644C2.31441 47.8827 0.379269 35.0628 0.128039 32.7152C-1.34455 18.9553 10.1122 4.74622 22.7999 0.875027C57.6919 -0.299159 62.0234 38.5802 86.5443 50.0711C89.1555 51.3724 89.2705 48.7339 88.7935 48.0921C82.3282 39.3927 78.9117 17.5032 83.7106 8.31957C84.5595 6.69507 86.0464 1.04288 90.0586 0" sodipodi:nodetypes="ccccccc"/><path id="shape29" transform="matrix(0.999999885023153 0 0 0.999999885023153 96.9276533062367 249.597392641123)" fill="#262626" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M7.48536 0C5.90866 1.17863 17.6357 4.67611 19.6272 4.67611C22.1273 4.6666 16.9275 12.0051 14.1295 14.101C11.3315 16.1968 10.2852 13.9782 7.69836 13.7682C6.29357 13.6282 13.451 3.91408 8.32879 10.8759C6.40249 13.494 1.96496 14.18 0.0526435 10.368C-0.735176 8.79756 7.58788 2.70009 7.08121 0.175135" sodipodi:nodetypes="ccccccc"/><path id="shape30" transform="matrix(0.999999885023153 0 0 0.999999885023153 206.994998354854 241.417692711659)" fill="#262626" fill-rule="evenodd" stroke="#9f7949" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round" d="M0.650143 2.75051C0.270449 2.57189 8.15624 0.395246 12.215 0C13.5542 4.03359 15.5721 6.60825 14.9609 9.2446C12.6855 9.48611 12.459 9.9107 9.92263 9.59754C9.39963 9.77129 10.1362 8.74456 9.64671 9.00284C8.86602 9.41479 9.51197 7.23578 9.31286 6.37581C9.14735 5.66097 10.7588 8.9578 5.72829 10.2113C2.531 11.008 2.80879 3.87784 0 2.15505" sodipodi:nodetypes="cccccccc"/><path id="shape31" transform="matrix(0.500851442839755 0.0824264405381278 -0.0974111438090421 0.591903661093575 167.503466687479 162.865703907668)" fill="#000000" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M4.13926 1.92854C1.80642 5.20901 -1.17347 13.2175 0.476758 18.7599C2.00888 23.9056 6.47169 26.0849 8.37182 24.9056C13.0223 22.0193 11.0159 8.25951 10.5637 4.44748C7.78611 -4.38946 5.54743 2.82779 4.13926 1.92854Z" sodipodi:nodetypes="csscc"/><path id="shape011" transform="matrix(0.305260126079032 0.00597181539440119 -0.0097155672328075 0.496628760694225 214.075709599693 161.709264272426)" fill="#000000" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" d="M4.13926 1.92854C1.80642 5.20901 -1.17347 13.2175 0.476758 18.7599C2.00888 23.9056 6.47169 26.0849 8.37182 24.9056C13.0223 22.0193 11.0159 8.25951 10.5637 4.44748C7.78611 -4.38946 5.54743 2.82779 4.13926 1.92854Z" sodipodi:nodetypes="csscc"/><path id="shape32" transform="matrix(0.999999885023153 0 0 0.999999885023153 212.458241624091 193.961912551429)" fill="#9f7949" fill-rule="evenodd" stroke="#9f7949" stroke-width="2.817864" stroke-linecap="square" stroke-linejoin="bevel" d="M0.120603 0C-0.412654 9.69703 0.822471 13.5726 3.82598 11.6268C3.74885 9.48898 4.20351 5.73306 5.18996 0.359027Z" sodipodi:nodetypes="cccc"/><path id="shape33" transform="matrix(0.872692249495892 -0.488270424781317 0.488270424781317 0.872692249495892 253.673301728322 118.618410819073)" fill="url(#gradient0)" fill-rule="evenodd" stroke="#f1dcff" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" d="M23.6843 39.863C-0.498194 50.9873 -4.86898 22.442 4.73722 23.6582C25.9308 26.3412 30.8031 13.6477 31.2044 0C34.4117 19.267 37.1963 36.0803 23.6843 39.863Z" sodipodi:nodetypes="cscc"/><path id="shape34" transform="matrix(0.999999885023153 0 0 0.999999885023153 222.719199254979 178.92141450875)" fill="url(#gradient1)" fill-rule="evenodd" stroke="#e9bcff" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" d="M11.9124 54.9182C-16.5358 51.2938 14.5219 28.3923 17.4374 22.6715C20.0282 17.5878 17.878 0 17.878 0C17.878 0 20.1915 4.49198 21.533 6.61591C29.2477 18.8302 38.4846 58.3036 11.9124 54.9182Z" sodipodi:nodetypes="cscss"/><path id="shape35" transform="matrix(0.999999885023153 0 0 0.999999885023153 57.3065380875518 92.5463455276972)" fill="url(#gradient2)" fill-rule="evenodd" stroke="#f4e1ff" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" d="M5.38167 11.66C8.48568 6.94231 25.3058 -2.41148 20.5075 0.577588C-1.195 14.0969 40.252 17.7506 29.3215 32.3819C20.3028 44.454 -12.836 39.3482 5.38167 11.66Z" sodipodi:nodetypes="ccss"/><path id="shape131" transform="matrix(1.14526361755818 0 0 -1.0826040260759 194.508713421792 56.4194649528293)" fill="#e5d0f3" fill-rule="evenodd" stroke="#ead1ff" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" marker-mid="url(#lineMarker17)" krita:marker-fill-method="auto" d="M0 0L1.8678 1.39124" sodipodi:nodetypes="cc"/>
 </svg>
