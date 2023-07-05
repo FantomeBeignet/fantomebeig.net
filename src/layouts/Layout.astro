@@ -1,32 +1,18 @@
 ---
-import "../styles/global.css";
-import Navbar from "../components/Navbar.svelte";
+import '../styles/app.css'
 
-export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Tom Béné's personal homepage." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <Navbar client:load />
-    <slot />
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class = "bg-surface-900">
+		<slot />
+	</body>
 </html>
-<style is:global>
-  html {
-    background-color: var(--color-background-dark);
-    scroll-behavior: smooth;
-    min-height: 100vh;
-  }
-</style>

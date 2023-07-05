@@ -1,25 +1,9 @@
-import { defineConfig } from "astro/config";
-import { fileURLToPath, URL } from "url";
+import { defineConfig } from 'astro/config';
+import svelte from '@astrojs/svelte';
 
-// https://astro.build/config
-import svelte from "@astrojs/svelte";
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.fantomebeig.net/",
-  vite: {
-    resolve: {
-      alias: {
-        "@styles": fileURLToPath(new URL("./src/styles", import.meta.url)),
-      },
-    },
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@use "@styles/style.scss" as *;`,
-        },
-      },
-    },
-  },
-  integrations: [svelte()],
+	integrations: [svelte(), tailwind()]
 });

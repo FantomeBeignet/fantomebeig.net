@@ -1,38 +1,32 @@
 {
-  "name": "@example/basics",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "prepare": "husky install"
-  },
-  "dependencies": {
-    "@astrojs/svelte": "^3.1.0",
-    "@astrojs/tailwind": "^2.1.3",
-    "@fontsource/fira-code": "^4.5.12",
-    "@fontsource/montserrat": "^4.5.13",
-    "astro": "^2.7.3",
-    "autoprefixer": "^10.4.13",
-    "svelte": "^3.55.0"
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.4.2",
-    "commitlint": "^17.4.2",
-    "cssnano": "^5.1.14",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.0",
-    "postcss-html": "^1.5.0",
-    "postcss-preset-env": "^7.8.3",
-    "prettier": "^2.8.3",
-    "prettier-plugin-svelte": "^2.9.0",
-    "sass": "^1.57.1",
-    "stylelint": "^14.16.1",
-    "stylelint-config-recommended-scss": "^8.0.0",
-    "stylelint-config-standard": "^29.0.0"
-  }
+	"name": "fantomebeig.net",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@astrojs/svelte": "^3.1.0",
+		"@astrojs/tailwind": "^4.0.0",
+		"astro": "^2.7.2",
+		"svelte": "^4.0.0",
+		"tailwindcss": "^3.0.24"
+	},
+	"devDependencies": {
+		"eslint": "^8.44.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.10.1"
+	},
+	"lint-staged": {
+		"*.js,ts,svelte,astro,html,css,cjs,mjs,json": [
+			"eslint --cache --fix",
+			"prettier --write"
+		]
+	}
 }
