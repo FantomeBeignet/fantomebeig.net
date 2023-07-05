@@ -1,19 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title ="FTB Homepage">
-	<main class = "w-full h-full flex items-center justify-center">
-		<h1 class = "text-surface-50 text-5xl md:text-6xl lg:text-8xl font-semibold p-24 md:p-36 lg:p-40">Hello, I'm <br/><span class = "gradient-heading">FantomeBeignet</span></h1>
+<Layout title="FTB Homepage">
+	<main class="w-full h-full flex items-center justify-center font-body">
+		<div class="flex flex-col gap-2 p-24 md:p-36 lg:p-40 text-surface-50">
+			<h1 class="text-5xl md:text-6xl lg:text-8xl font-heading font-bold">
+				Hello, I'm <br /><span class="gradient-heading">FantomeBeignet</span>
+			</h1>
+			<span class="text-3xl font-light"
+				>I'm a small dev working mostly on websites and compilers</span
+			>
+		</div>
 	</main>
 </Layout>
 
 <style>
-.gradient-heading {
-	@apply bg-clip-text text-transparent box-decoration-clone;
-	/* Direction */
-	@apply bg-gradient-to-br;
-	/* Color Stops */
-	@apply from-tertiary via-secondary to-primary;
-}
+	.gradient-heading {
+		@apply bg-clip-text text-transparent box-decoration-clone;
+		/* Direction */
+		@apply bg-gradient-to-br;
+		/* Color Stops */
+		@apply from-tertiary via-secondary to-primary;
+	}
 </style>
