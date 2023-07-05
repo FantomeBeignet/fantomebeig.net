@@ -2,7 +2,12 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				heading: ['Raleway', 'sans-serif'],
+				body: ['"Roboto Condensed"', 'sans-serif']
+			}
+		},
 		colors: {
 			primary: {
 				50: '#f7effc',

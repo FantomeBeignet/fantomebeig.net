@@ -1,6 +1,11 @@
+@import '@fontsource-variable/raleway';
+@import '@fontsource/roboto-condensed/300.css';
+@import '@fontsource/roboto-condensed/400.css';
+@import '@fontsource/roboto-condensed/700.css';
+
 body {
-	background-image: radial-gradient(at 0% 0%, rgb(199, 146, 234, 0.15) 0px, transparent 45%),
-		radial-gradient(at 98% 1%, rgba(244, 139, 104, 0.15) 0px, transparent 65%);
+	background-image: radial-gradient(at 0% 0%, rgb(199, 146, 234, 0.1) 0px, transparent 45%),
+		radial-gradient(at 98% 1%, rgba(244, 139, 104, 0.15) 0px, transparent 55%);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
