@@ -24,18 +24,24 @@ import Card from '../components/Card.astro';
 				<a
 					rel="me"
 					href="https://hachyderm.io/@fantomebeignet"
-					class="flex flex-col items-center justify-center gap-2 hover:text-primary transition-colors"
+					class="flex flex-col items-center justify-center gap-2 hover:text-primary transition-colors group"
 				>
-					<span class="fa-brands fa-mastodon text-2xl md:text-4xl lg:text-4xl text-center"></span>
-					<span class="text-lg md:text-xl lg:text-2xl font-light">Mastodon</span>
+					<span class="fa-brands fa-mastodon text-2xl md:text-4xl lg:text-5xl text-center"></span>
+					<span
+						class="text-lg md:text-xl lg:text-2xl font-light group-hover:underline underline-offset-4"
+						>Mastodon</span
+					>
 				</a>
 				<a
 					rel="me"
 					href="https://github.com/FantomeBeignet"
-					class="flex flex-col items-center justify-center gap-2 hover:text-primary transition-colors"
+					class="flex flex-col items-center justify-center gap-2 hover:text-primary transition-colors group"
 				>
-					<span class="fa-brands fa-github text-2xl md:text-4xl lg:text-4xl text-center"></span>
-					<span class="text-lg md:text-xl lg:text-2xl font-light">GitHub</span>
+					<span class="fa-brands fa-github text-2xl md:text-4xl lg:text-5xl text-center"></span>
+					<span
+						class="text-lg md:text-xl lg:text-2xl font-light group-hover:underline underline-offset-4"
+						>GitHub</span
+					>
 				</a>
 			</div>
 		</div>
@@ -54,13 +60,21 @@ import Card from '../components/Card.astro';
 					Slideshow manager and calendar visualizer hosted on a Raspberry Pi
 				</Card>
 				<Card title="koj" tags="compiler, ocaml" link="https://github.com/koj-lang/reference">
-					General purpose programming language that compiles to C
+					General purpose programming language that compiles to C (very early stage)
 				</Card>
-				<Card title="fantomebeig.net" tags="astro, typescript" link="https://github.com/FantomeBeignet/fantomebeig.net">
+				<Card
+					title="fantomebeig.net"
+					tags="astro, typescript"
+					link="https://github.com/FantomeBeignet/fantomebeig.net"
+				>
 					My website (this one!) build with &lt;3 with Astro
 				</Card>
 			</div>
-			<span class="text-xl md:text-2xl lg:text-3xl text-surface-300">See all</span>
+			<a
+				href="https://github.com/FantomeBeignet?tab=repositories"
+				class="text-xl md:text-2xl lg:text-3xl text-surface-300 hover:text-primary transition-colors hover:underline underline-offset-4"
+				>See all</a
+			>
 		</div>
 	</main>
 </Layout>
