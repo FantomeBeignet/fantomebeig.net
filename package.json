@@ -25,7 +25,8 @@
 		"husky": "^8.0.3",
 		"prettier": "^2.8.8",
 		"prettier-plugin-astro": "^0.10.0",
-		"prettier-plugin-svelte": "^2.10.1"
+		"prettier-plugin-svelte": "^2.10.1",
+		"prettier-plugin-tailwindcss": "^0.4.0"
 	},
 	"lint-staged": {
 		"*.js,ts,svelte,astro,html,css,cjs,mjs,json": [
