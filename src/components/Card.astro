@@ -4,13 +4,13 @@ const { title, tags, link } = Astro.props;
 
 <a
 	href={link}
-	class="bg-surface-800 text-surface-50 flex flex-col items-start justify-center border border-surface-600 p-4 md:p-5 lg:p-6 w-48 md:w-64 lg:w-80 gap-3 md:gap-4 lg:gap-6 hover:scale-[102%] hover:brightness-105 transition-transform"
+	class="flex w-48 flex-col items-start justify-center gap-3 border border-surface-600 bg-surface-800 p-4 transition-transform hover:scale-[102%] hover:brightness-105 md:w-64 md:gap-4 md:p-5 lg:w-80 lg:gap-6 lg:p-6"
 >
 	<div class="flex flex-col items-start justify-center">
-		<h3 class="text-lg md:text-xl lg:text-2xl font-normal">{title}</h3>
-		<span class="text-sm md:text-base lg:text-xl text-surface-300 leading-tight">{tags}</span>
+		<h3 class="text-lg font-normal md:text-xl lg:text-2xl">{title}</h3>
+		<span class="text-sm leading-tight text-surface-300 md:text-base lg:text-xl">{tags}</span>
 	</div>
-	<p class="text-base md:text-lg lg:text-xl leading-tight line-clamp-3 h-16 md:h-20 lg:h-[5.25rem]">
+	<p class="line-clamp-3 h-16 text-base leading-tight md:h-20 md:text-lg lg:h-[5.25rem] lg:text-xl">
 		<slot />
 	</p>
 </a>
