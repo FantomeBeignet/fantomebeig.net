@@ -1,0 +1,68 @@
+---
+import { Code } from 'astro/components';
+import '../styles/app.css';
+import CopyButton from '@components/CopyButton.svelte';
+
+const { code, lang } = Astro.props;
+---
+
+{
+	code ? (
+		<div
+			class="not-prose flex w-full flex-col items-start justify-center gap-2 border border-surface p-2 md:gap-3 md:p-3 lg:gap-4 lg:p-4"
+			style="background-color: var(--code-bg);"
+		>
+			<div class="flex w-full items-center justify-between" style="color: var(--code-fg);">
+				<div class="flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+						/>
+					</svg>
+					<span class="font-mono">{lang}</span>
+				</div>
+				<CopyButton code={code} client:load />
+			</div>
+			<div class="h-px w-full bg-surface" />
+			<Code code={code} lang={lang} wrap theme="css-variables" />
+		</div>
+	) : (
+		<code>
+			<slot />
+		</code>
+	)
+}
+
+<style is:global>
+	:root {
+		--code-bg: #242436;
+		--code-fg: #e1e2ea;
+		--code-gray: #616171;
+		--code-gray-light: #6e6e7e;
+		--code-ice: #98aedd;
+		--code-purple: #b678c4;
+		--code-teal: #90c5b5;
+		--code-magenta: #b08cc5;
+
+		--astro-code-color-text: var(--code-fg);
+		--astro-code-color-background: var(--code-bg);
+		--astro-code-token-constant: var(--code-ice);
+		--astro-code-token-string: var(--code-ice);
+		--astro-code-token-comment: var(--code-gray);
+		--astro-code-token-keyword: var(--code-purple);
+		--astro-code-token-parameter: var(--code-teal);
+		--astro-code-token-function: var(--code-magenta);
+		--astro-code-token-string-expression: var(--code-ice);
+		--astro-code-token-punctuation: var(--code-fg);
+		--astro-code-token-link: var(--code-ice);
+	}
+</style>
