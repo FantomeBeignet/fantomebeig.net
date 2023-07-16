@@ -5,7 +5,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				heading: ['Raleway', 'sans-serif'],
-				body: ['"Roboto Condensed"', 'sans-serif']
+				body: ['"Roboto Condensed"', 'sans-serif'],
+				mono: ['"Fira Code Variable"', 'monospace']
 			}
 		},
 		colors: {
