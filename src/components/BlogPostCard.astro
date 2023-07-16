@@ -1,6 +1,6 @@
 ---
 import { makePostSlug } from '@lib/slugify';
-const { title, series, publishDate, intro } = Astro.props;
+const { title, series, publishDate, intro, minutesRead } = Astro.props;
 ---
 
 <a
@@ -18,13 +18,18 @@ const { title, series, publishDate, intro } = Astro.props;
 				</span>
 			) : null
 		}
-		{
-			publishDate ? (
-				<span class="text-md text-secondary-400 md:text-lg lg:text-2xl">
-					{publishDate.toDateString()}
-				</span>
-			) : null
-		}
+		<div class = "w-full flex items-center justify-between">
+			{
+				publishDate ? (
+					<span class="text-base text-secondary-400 md:text-lg lg:text-2xl">
+						{publishDate.toDateString()}
+					</span>
+				) : null
+			}
+			<span class="text-base text-surface-300 md:text-lg lg:text-2xl">
+				{minutesRead}
+			</span>
+		</div>
 	</div>
 	<p class="text-sm md:text-base lg:text-lg">
 		{intro}

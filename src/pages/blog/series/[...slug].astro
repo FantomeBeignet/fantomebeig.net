@@ -28,16 +28,20 @@ const seriesEntries = await getCollection('blog', ({ data }) => data.series === 
 		<h2 class="text-2xl lg:text-4xl">Series: {entry}</h2>
 		<ul class="flex flex-col">
 			{
-				seriesEntries.map((seriesEntry) => (
-					<li>
-						<BlogPostCard
-							title={seriesEntry.data.title}
-							series={seriesEntry.data.series}
-							publishData={seriesEntry.data.publishDate}
-							intro={marked.parse(seriesEntry.body.split('\n\n')[0])}
-						/>
-					</li>
-				))
+				seriesEntries.map(async (seriesEntry) => {
+					const { remarkPluginFrontmatter } = await seriesEntry.render();
+					return (
+						<li>
+							<BlogPostCard
+								title={seriesEntry.data.title}
+								series={seriesEntry.data.series}
+								publishData={seriesEntry.data.publishDate}
+								intro={marked.parse(seriesEntry.body.split('\n\n')[0])}
+								minutesRead={remarkPluginFrontmatter.minutesRead}
+							/>
+						</li>
+					);
+				})
 			}
 		</ul>
 	</main>

@@ -14,12 +14,12 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, headings, components } = await entry.render();
+const { Content, headings, components, remarkPluginFrontmatter } = await entry.render();
 ---
 
 <Layout title={entry.data.title}>
 	<main
-		class="prose-surface prose prose-invert mx-8 my-16 flex flex-col items-start justify-start md:prose-lg lg:prose-2xl prose-headings:font-light prose-a:text-secondary prose-code:font-mono prose-code:font-normal prose-code:text-surface-50 prose-code:bg-surface-700 prose-code:before:hidden prose-code:after:hidden prose-code:px-1 md:prose-code:px-1.5  prose-code:rounded-sm md:prose-code:rounded-md md:m-20 lg:m-24"
+		class="prose-surface prose prose-invert mx-8 my-16 flex flex-col items-start justify-start md:prose-lg lg:prose-2xl prose-headings:font-light prose-a:text-secondary prose-code:rounded-sm prose-code:bg-surface-700 prose-code:px-1 prose-code:font-mono prose-code:font-normal prose-code:text-surface-50 prose-code:before:hidden prose-code:after:hidden md:m-20 md:prose-code:rounded-md md:prose-code:px-1.5 lg:m-24"
 	>
 		<div class="not-prose flex flex-col items-start justify-start gap-1 md:gap-2 lg:gap-4">
 			<h1 class="text-xl md:text-2xl lg:text-5xl">
@@ -36,6 +36,10 @@ const { Content, headings, components } = await entry.render();
 					</a>
 				) : null
 			}
+			<span
+				class="text-lg text-surface-300 md:text-xl lg:text-3xl"
+				>{remarkPluginFrontmatter.minutesRead}</span
+			>
 		</div>
 		<nav
 			class="not-prose my-8 flex w-full flex-col items-start justify-start border border-surface-600 bg-surface-800 p-3 md:my-12 md:p-4 lg:my-16 lg:p-6"
