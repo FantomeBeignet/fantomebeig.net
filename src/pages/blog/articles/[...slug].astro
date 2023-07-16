@@ -1,0 +1,73 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { slugify, makePostSlug } from '@lib/slugify';
+import type { MarkdownHeading } from 'astro';
+import CodeBlock from '@components/CodeBlock.astro'
+
+export async function getStaticPaths() {
+	const blogEntries = await getCollection('blog');
+	return blogEntries.map((entry) => ({
+		params: { slug: makePostSlug(entry.data.title, entry.data.series) },
+		props: { entry }
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content, headings, components } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+	<main
+		class="prose-surface prose prose-invert mx-8 my-16 flex flex-col items-start justify-start gap-8 md:prose-lg lg:prose-2xl prose-headings:font-light prose-a:text-secondary prose-code:font-mono prose-code:font-normal md:m-20 md:gap-12 lg:m-24 lg:gap-16"
+	>
+		<div class="not-prose flex flex-col items-start justify-start gap-1 md:gap-2 lg:gap-4">
+			<h1 class="text-xl md:text-2xl lg:text-5xl">
+				<span class="fa-solid fa-quote-left"></span>
+				{entry.data.title}
+			</h1>
+			{
+				entry.data.series ? (
+					<a
+						href={`/blog/series/${slugify(entry.data.series)}`}
+						class="text-lg text-secondary-400 underline-offset-4 transition-colors hover:text-primary hover:underline md:text-xl lg:text-3xl"
+					>
+						In: {entry.data.series}
+					</a>
+				) : null
+			}
+		</div>
+		<nav
+			class="not-prose flex w-full flex-col items-start justify-start border border-surface-600 bg-surface-800 p-3 md:p-4 lg:p-6"
+		>
+			<h2 class="font-normal md:text-xl lg:text-2xl">Contents</h2>
+			<ul>
+				{
+					headings
+						.filter((h: MarkdownHeading) => h.depth < 4)
+						.map((h: MarkdownHeading) => (
+							<li
+								class={
+									h.depth == 2
+										? 'indent-2 md:indent-3 lg:indent-4'
+										: h.depth == 3
+										? 'indent-4 md:indent-6 lg:indent-8'
+										: ''
+								}
+							>
+								<a
+									href={`/blog/articles/${makePostSlug(entry.data.title, entry.data.series)}#${
+										h.slug
+									}`}
+									class="underline-offset-4 transition-colors hover:text-primary hover:underline"
+								>
+									{h.text}
+								</a>
+							</li>
+						))
+				}
+			</ul>
+		</nav>
+		<Content components={{ ...components, code: CodeBlock }} />
+	</main>
+</Layout>

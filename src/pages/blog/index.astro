@@ -1,0 +1,63 @@
+---
+import Layout from '@layouts/Layout.astro';
+import BlogPostCard from '@components/BlogPostCard.astro';
+import { getCollection } from 'astro:content';
+import { marked } from 'marked';
+import { renderer } from '@lib/marked';
+import { slugify } from '@lib/slugify';
+
+const series = new Set<string>();
+const blogEntries = await getCollection('blog');
+blogEntries.map((entry) => {
+	if (entry.data.series) series.add(entry.data.series);
+});
+marked.use({ renderer });
+---
+
+<Layout title="FantomeBeignet - Blog">
+	<main
+		class="flex min-h-screen w-full max-w-7xl flex-col items-start justify-start gap-20 p-16 md:gap-24 md:p-20 lg:gap-32 lg:p-24"
+	>
+		<h1 class="text-2xl font-semibold md:text-4xl lg:text-6xl font-heading">
+			<span class="fa-solid fa-newspaper text-xl font-normal md:text-4xl lg:text-5xl"></span> Blog
+		</h1>
+		<div class="flex w-full flex-col items-start justify-center gap-12 md:gap-16 lg:gap-20">
+			<div class="flex w-full flex-col items-start justify-center gap-4 md:gap-6 lg:gap-8">
+				<h2 class="text-2xl md:text-3xl lg:text-4xl">Series:</h2>
+				<ul class="flex flex-col">
+					{
+						Array.from(series).map((entry) => (
+							<li class="text-xl leading-tight md:text-2xl lg:text-3xl">
+								<span>-</span>
+								<a
+									href={`/blog/series/${slugify(entry)}`}
+									class="underline-offset-4 transition-colors hover:text-primary hover:underline"
+								>
+									{entry}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+
+			<div class="flex w-full flex-col items-start justify-center gap-4 md:gap-6 lg:gap-8">
+				<h2 class="text-2xl md:text-3xl lg:text-4xl">All articles:</h2>
+				<ul class="flex flex-col">
+					{
+						blogEntries.map((blogPostEntry) => (
+							<li>
+								<BlogPostCard
+									title={blogPostEntry.data.title}
+									series={blogPostEntry.data.series}
+									publishData={blogPostEntry.data.publishDate}
+									intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
+								/>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</main>
+</Layout>

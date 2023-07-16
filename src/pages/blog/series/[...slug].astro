@@ -1,0 +1,45 @@
+---
+import BlogPostCard from '@components/BlogPostCard.astro';
+import Layout from '@layouts/Layout.astro';
+import { slugify } from '@lib/slugify';
+import { marked } from 'marked';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+	const blogEntries = await getCollection('blog');
+	const series = new Set<string>();
+	blogEntries.forEach((entry) => {
+		if (entry.data.series) series.add(entry.data.series);
+	});
+	return Array.from(series).map((entry) => ({
+		params: { slug: slugify(entry) },
+		props: { entry }
+	}));
+}
+
+const { entry } = Astro.props;
+const seriesEntries = await getCollection('blog', ({ data }) => data.series === entry);
+---
+
+<Layout title={`FantomeBeignet - ${entry}`}>
+	<main
+		class="flex min-h-screen w-full max-w-7xl flex-col items-start justify-start gap-4 p-16 md:gap-6 md:p-24 lg:gap-8 lg:p-32"
+	>
+		<h2 class="text-2xl lg:text-4xl">Series: {entry}</h2>
+		<ul class="flex flex-col">
+			{
+				seriesEntries.map((seriesEntry) => (
+					<li>
+						<BlogPostCard
+							title={seriesEntry.data.title}
+							series={seriesEntry.data.series}
+							tags={seriesEntry.data.tags}
+							publishData={seriesEntry.data.publishDate}
+							intro={marked.parse(seriesEntry.body.split('\n\n')[0])}
+						/>
+					</li>
+				))
+			}
+		</ul>
+	</main>
+</Layout>
