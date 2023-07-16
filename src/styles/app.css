@@ -4,6 +4,17 @@
 @import '@fontsource/roboto-condensed/700.css';
 @import '@fontsource-variable/fira-code';
 
+:root {
+	--code-bg: #242436;
+	--code-fg: #e1e2ea;
+	--code-gray: #616171;
+	--code-gray-light: #6e6e7e;
+	--code-ice: #98aedd;
+	--code-purple: #b678c4;
+	--code-teal: #90c5b5;
+	--code-magenta: #b08cc5;
+}
+
 body {
 	background-image: radial-gradient(at 0% 0%, rgb(199, 146, 234, 0.1) 0px, transparent 45%),
 		radial-gradient(at 98% 1%, rgba(244, 139, 104, 0.15) 0px, transparent 55%);
