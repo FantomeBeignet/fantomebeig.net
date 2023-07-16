@@ -7,26 +7,13 @@ const { code, lang } = Astro.props;
 ---
 
 {
+	// prettier-ignore
 	code ? (
-		<div
-			class="not-prose flex w-full flex-col items-start justify-center gap-2 border border-surface p-2 md:gap-3 md:p-3 lg:gap-4 lg:p-4"
-			style="background-color: var(--code-bg);"
-		>
+		<div class="not-prose flex w-full flex-col items-start justify-center gap-2 border border-surface p-2 md:gap-3 md:p-3 lg:gap-4 lg:p-4" style="background-color: var(--code-bg);">
 			<div class="flex w-full items-center justify-between" style="color: var(--code-fg);">
 				<div class="flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-						/>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
 					</svg>
 					<span class="font-mono">{lang}</span>
 				</div>
@@ -35,11 +22,7 @@ const { code, lang } = Astro.props;
 			<div class="h-px w-full bg-surface" />
 			<Code code={code} lang={lang} wrap theme="css-variables" />
 		</div>
-	) : (
-		<code>
-			<slot />
-		</code>
-	)
+	) : <code><slot /></code>
 }
 
 <style is:global>
