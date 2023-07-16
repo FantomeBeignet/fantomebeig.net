@@ -33,7 +33,6 @@ const seriesEntries = await getCollection('blog', ({ data }) => data.series === 
 						<BlogPostCard
 							title={seriesEntry.data.title}
 							series={seriesEntry.data.series}
-							tags={seriesEntry.data.tags}
 							publishData={seriesEntry.data.publishDate}
 							intro={marked.parse(seriesEntry.body.split('\n\n')[0])}
 						/>
