@@ -1,0 +1,32 @@
+---
+import { makePostSlug } from '@lib/slugify';
+const { title, series, publishDate, intro } = Astro.props;
+---
+
+<a
+	href={`/blog/articles/${makePostSlug(title, series)}`}
+	class="flex w-full flex-col items-start justify-center gap-3 border border-surface-600 bg-surface-800 p-4 transition-all hover:scale-[102%] hover:brightness-105 md:gap-4 md:p-5 lg:gap-6 lg:p-6"
+>
+	<div class="flex flex-col items-start justify-center gap-1 md:gap-1.5 lg:gap-2">
+		<h3 class="text-lg font-normal leading-tight md:text-xl lg:text-3xl">
+			{title}
+		</h3>
+		{
+			series ? (
+				<span class="text-md leading-tight text-secondary-400 md:text-lg lg:text-2xl">
+					In series: {series}
+				</span>
+			) : null
+		}
+		{
+			publishDate ? (
+				<span class="text-md text-secondary-400 md:text-lg lg:text-2xl">
+					{publishDate.toDateString()}
+				</span>
+			) : null
+		}
+	</div>
+	<p class="text-sm md:text-base lg:text-lg">
+		{intro}
+	</p>
+</a>
