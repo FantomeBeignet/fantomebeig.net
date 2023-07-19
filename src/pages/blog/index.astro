@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import BlogPostCard from '@components/BlogPostCard.astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { marked } from 'marked';
 import { renderer } from '@lib/marked';
 import { slugify } from '@lib/slugify';
@@ -43,33 +43,11 @@ marked.use({ renderer });
 				<ul class="flex flex-col">
 					{
 						blogEntries.map(async (blogPostEntry) => {
-							const { remarkPluginFrontmatter } = await blogPostEntry.render();
-							if (blogPostEntry.data.series) {
-								const series = await getEntry(blogPostEntry.data.series);
 								return (
 									<li>
-										<BlogPostCard
-											title={blogPostEntry.data.title}
-											series={series.data.title}
-											publishData={blogPostEntry.data.publishDate}
-											intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
-											minutesRead={remarkPluginFrontmatter.minutesRead}
-										/>
+										<BlogPostCard entry={blogPostEntry} />
 									</li>
 								);
-							} else {
-								return (
-									<li>
-										<BlogPostCard
-											title={blogPostEntry.data.title}
-											series={undefined}
-											publishData={blogPostEntry.data.publishDate}
-											intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
-											minutesRead={remarkPluginFrontmatter.minutesRead}
-										/>
-									</li>
-								);
-							}
 						})
 					}
 				</ul>

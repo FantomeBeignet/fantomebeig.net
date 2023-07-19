@@ -2,7 +2,6 @@
 import BlogPostCard from '@components/BlogPostCard.astro';
 import Layout from '@layouts/Layout.astro';
 import { slugify } from '@lib/slugify';
-import { marked } from 'marked';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -25,16 +24,9 @@ const posts = await getCollection('blog', ({ data }) => data.series?.id === entr
 		<ul class="flex flex-col">
 			{
 				posts.map(async (post) => {
-					const { remarkPluginFrontmatter } = await post.render();
 					return (
 						<li>
-							<BlogPostCard
-								title={post.data.title}
-								series={entry.data.title}
-								publishData={post.data.publishDate}
-								intro={marked.parse(post.body.split('\n\n')[0])}
-								minutesRead={remarkPluginFrontmatter.minutesRead}
-							/>
+							<BlogPostCard entry={post} />
 						</li>
 					);
 				})
