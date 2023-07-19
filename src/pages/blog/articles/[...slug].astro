@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { slugify, makePostSlug } from '@lib/slugify';
 import type { MarkdownHeading } from 'astro';
 import CodeBlock from '@components/CodeBlock.astro';
@@ -8,13 +8,14 @@ import CodeBlock from '@components/CodeBlock.astro';
 export async function getStaticPaths() {
 	const blogEntries = await getCollection('blog');
 	return blogEntries.map((entry) => ({
-		params: { slug: makePostSlug(entry.data.title, entry.data.series) },
+		params: { slug: makePostSlug(entry.data.title, entry.data.series?.id) },
 		props: { entry }
 	}));
 }
 
 const { entry } = Astro.props;
 const { Content, headings, components, remarkPluginFrontmatter } = await entry.render();
+const series = await getEntry(entry.data.series)
 ---
 
 <Layout title={entry.data.title}>
@@ -29,10 +30,10 @@ const { Content, headings, components, remarkPluginFrontmatter } = await entry.r
 			{
 				entry.data.series ? (
 					<a
-						href={`/blog/series/${slugify(entry.data.series)}`}
+						href={`/blog/series/${entry.data.series.id}`}
 						class="text-lg text-secondary-400 underline-offset-4 transition-colors hover:text-primary hover:underline md:text-xl lg:text-3xl"
 					>
-						In: {entry.data.series}
+						In: {series?.data.title}
 					</a>
 				) : null
 			}
@@ -60,7 +61,7 @@ const { Content, headings, components, remarkPluginFrontmatter } = await entry.r
 								}
 							>
 								<a
-									href={`/blog/articles/${makePostSlug(entry.data.title, entry.data.series)}#${
+									href={`/blog/articles/${makePostSlug(entry.data.title, entry.data.series.id)}#${
 										h.slug
 									}`}
 									class="underline-offset-4 transition-colors hover:text-primary hover:underline"

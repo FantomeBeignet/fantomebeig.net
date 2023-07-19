@@ -6,37 +6,33 @@ import { marked } from 'marked';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-	const blogEntries = await getCollection('blog');
-	const series = new Set<string>();
-	blogEntries.forEach((entry) => {
-		if (entry.data.series) series.add(entry.data.series);
-	});
-	return Array.from(series).map((entry) => ({
-		params: { slug: slugify(entry) },
+	const series = await getCollection('series');
+	return series.map((entry) => ({
+		params: { slug: slugify(entry.data.title) },
 		props: { entry }
 	}));
 }
 
 const { entry } = Astro.props;
-const seriesEntries = await getCollection('blog', ({ data }) => data.series === entry);
+const posts = await getCollection('blog', ({ data }) => data.series?.id === entry.id);
 ---
 
-<Layout title={`FantomeBeignet - ${entry}`}>
+<Layout title={`FantomeBeignet - ${entry.data.title}`}>
 	<main
 		class="flex min-h-screen w-full max-w-7xl flex-col items-start justify-start gap-4 p-16 md:gap-6 md:p-24 lg:gap-8 lg:p-32"
 	>
-		<h2 class="text-2xl lg:text-4xl">Series: {entry}</h2>
+		<h2 class="text-2xl lg:text-4xl">Series: {entry.data.title}</h2>
 		<ul class="flex flex-col">
 			{
-				seriesEntries.map(async (seriesEntry) => {
-					const { remarkPluginFrontmatter } = await seriesEntry.render();
+				posts.map(async (post) => {
+					const { remarkPluginFrontmatter } = await post.render();
 					return (
 						<li>
 							<BlogPostCard
-								title={seriesEntry.data.title}
-								series={seriesEntry.data.series}
-								publishData={seriesEntry.data.publishDate}
-								intro={marked.parse(seriesEntry.body.split('\n\n')[0])}
+								title={post.data.title}
+								series={entry.data.title}
+								publishData={post.data.publishDate}
+								intro={marked.parse(post.body.split('\n\n')[0])}
 								minutesRead={remarkPluginFrontmatter.minutesRead}
 							/>
 						</li>

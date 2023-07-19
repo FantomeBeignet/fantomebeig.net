@@ -1,16 +1,13 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import BlogPostCard from '@components/BlogPostCard.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { marked } from 'marked';
 import { renderer } from '@lib/marked';
 import { slugify } from '@lib/slugify';
 
-const series = new Set<string>();
 const blogEntries = await getCollection('blog');
-blogEntries.map((entry) => {
-	if (entry.data.series) series.add(entry.data.series);
-});
+const seriesEntries = await getCollection('series');
 marked.use({ renderer });
 ---
 
@@ -26,14 +23,14 @@ marked.use({ renderer });
 				<h2 class="text-2xl md:text-3xl lg:text-4xl">Series:</h2>
 				<ul class="flex flex-col">
 					{
-						Array.from(series).map((entry) => (
+						seriesEntries.map((entry) => (
 							<li class="text-xl leading-tight md:text-2xl lg:text-3xl">
 								<span>-</span>
 								<a
-									href={`/blog/series/${slugify(entry)}`}
+									href={`/blog/series/${slugify(entry.data.title)}`}
 									class="underline-offset-4 transition-colors hover:text-primary hover:underline"
 								>
-									{entry}
+									{entry.data.title}
 								</a>
 							</li>
 						))
@@ -47,17 +44,32 @@ marked.use({ renderer });
 					{
 						blogEntries.map(async (blogPostEntry) => {
 							const { remarkPluginFrontmatter } = await blogPostEntry.render();
-							return (
-								<li>
-									<BlogPostCard
-										title={blogPostEntry.data.title}
-										series={blogPostEntry.data.series}
-										publishData={blogPostEntry.data.publishDate}
-										intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
-										minutesRead={remarkPluginFrontmatter.minutesRead}
-									/>
-								</li>
-							);
+							if (blogPostEntry.data.series) {
+								const series = await getEntry(blogPostEntry.data.series);
+								return (
+									<li>
+										<BlogPostCard
+											title={blogPostEntry.data.title}
+											series={series.data.title}
+											publishData={blogPostEntry.data.publishDate}
+											intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
+											minutesRead={remarkPluginFrontmatter.minutesRead}
+										/>
+									</li>
+								);
+							} else {
+								return (
+									<li>
+										<BlogPostCard
+											title={blogPostEntry.data.title}
+											series={undefined}
+											publishData={blogPostEntry.data.publishDate}
+											intro={marked.parse(blogPostEntry.body.split('\n\n')[0])}
+											minutesRead={remarkPluginFrontmatter.minutesRead}
+										/>
+									</li>
+								);
+							}
 						})
 					}
 				</ul>
